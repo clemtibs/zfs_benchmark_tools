@@ -1,0 +1,11 @@
+NAME                      PROPERTY              VALUE                                           SOURCE
+tank_raidz2_special_slog  recordsize            1M                                              local
+tank_raidz2_special_slog  mountpoint            /mnt/localhost/zpools/tank_raidz2_special_slog  local
+tank_raidz2_special_slog  compression           lz4                                             local
+tank_raidz2_special_slog  atime                 off                                             local
+tank_raidz2_special_slog  xattr                 sa                                              local
+tank_raidz2_special_slog  dnodesize             auto                                            local
+Adding special metadta vdev...
+NAME                      PROPERTY              VALUE                 SOURCE
+tank_raidz2_special_slog  special_small_blocks  64K                   local
+Adding SLOG vdev...

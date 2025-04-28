@@ -1,0 +1,8 @@
+NAME                       PROPERTY              VALUE                                            SOURCE
+tank_draid_nospecial_slog  recordsize            1M                                               local
+tank_draid_nospecial_slog  mountpoint            /mnt/localhost/zpools/tank_draid_nospecial_slog  local
+tank_draid_nospecial_slog  compression           lz4                                              local
+tank_draid_nospecial_slog  atime                 off                                              local
+tank_draid_nospecial_slog  xattr                 sa                                               local
+tank_draid_nospecial_slog  dnodesize             auto                                             local
+Adding SLOG vdev...

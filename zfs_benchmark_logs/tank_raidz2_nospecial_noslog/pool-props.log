@@ -1,0 +1,7 @@
+NAME                          PROPERTY              VALUE                                               SOURCE
+tank_raidz2_nospecial_noslog  recordsize            1M                                                  local
+tank_raidz2_nospecial_noslog  mountpoint            /mnt/localhost/zpools/tank_raidz2_nospecial_noslog  local
+tank_raidz2_nospecial_noslog  compression           lz4                                                 local
+tank_raidz2_nospecial_noslog  atime                 off                                                 local
+tank_raidz2_nospecial_noslog  xattr                 sa                                                  local
+tank_raidz2_nospecial_noslog  dnodesize             auto                                                local

@@ -1,0 +1,1615 @@
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   110G  54.9T      0  2.80K  66.4K   430M
+  draid2:3d:5c:0s-0       110G  54.5T      0  1.46K  55.3K   364M
+    sdd                      -      -      0    300  11.1K  72.8M
+    sde                      -      -      0    290  11.1K  72.8M
+    sdf                      -      -      0    307  11.1K  72.8M
+    sdg                      -      -      0    301  11.1K  72.8M
+    sdh                      -      -      0    295  11.1K  72.8M
+special                      -      -      -      -      -      -
+  mirror-1                405M   464G      0  1.27K  10.1K  54.7M
+    sdb                      -      -      0    651  5.05K  27.4M
+    sdc                      -      -      0    650  5.05K  27.4M
+logs                         -      -      -      -      -      -
+  nvme0n1p2               159M  31.3G      0    107  1.28K  12.8M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   110G  54.9T      0    256      0   164M
+  draid2:3d:5c:0s-0       110G  54.5T      0    253      0   164M
+    sdd                      -      -      0     50      0  32.8M
+    sde                      -      -      0     47      0  31.1M
+    sdf                      -      -      0     44      0  29.1M
+    sdg                      -      -      0     57      0  37.8M
+    sdh                      -      -      0     51      0  33.5M
+special                      -      -      -      -      -      -
+  mirror-1                405M   464G      0      3      0  15.9K
+    sdb                      -      -      0      1      0  7.97K
+    sdc                      -      -      0      1      0  7.97K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               159M  31.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   110G  54.9T      0  1.29K      0   826M
+  draid2:3d:5c:0s-0       110G  54.5T      0  1.19K      0   824M
+    sdd                      -      -      0    243      0   165M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    243      0   165M
+    sdg                      -      -      0    242      0   164M
+    sdh                      -      -      0    242      0   164M
+special                      -      -      -      -      -      -
+  mirror-1                405M   464G      0     99      0  2.02M
+    sdb                      -      -      0     51      0  1.01M
+    sdc                      -      -      0     47      0  1.01M
+logs                         -      -      -      -      -      -
+  nvme0n1p2               159M  31.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   111G  54.9T      0  1.19K      0   658M
+  draid2:3d:5c:0s-0       111G  54.5T      0  1.00K      0   657M
+    sdd                      -      -      0    207      0   133M
+    sde                      -      -      0    216      0   137M
+    sdf                      -      -      0    191      0   122M
+    sdg                      -      -      0    200      0   128M
+    sdh                      -      -      0    215      0   137M
+special                      -      -      -      -      -      -
+  mirror-1                218M   464G      0    193      0  1.28M
+    sdb                      -      -      0     97      0   654K
+    sdc                      -      -      0     95      0   654K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               101M  31.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   111G  54.9T      0  1.14K      0   789M
+  draid2:3d:5c:0s-0       111G  54.5T      0  1.14K      0   788M
+    sdd                      -      -      0    226      0   153M
+    sde                      -      -      0    242      0   164M
+    sdf                      -      -      0    236      0   160M
+    sdg                      -      -      0    223      0   151M
+    sdh                      -      -      0    235      0   159M
+special                      -      -      -      -      -      -
+  mirror-1                218M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.7K
+    sdc                      -      -      0      1      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               101M  31.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   111G  54.9T      0  1.45K      0   830M
+  draid2:3d:5c:0s-0       111G  54.5T      0  1.16K      0   792M
+    sdd                      -      -      0    242      0   164M
+    sde                      -      -      0    243      0   153M
+    sdf                      -      -      0    230      0   156M
+    sdg                      -      -      0    233      0   158M
+    sdh                      -      -      0    239      0   162M
+special                      -      -      -      -      -      -
+  mirror-1                218M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               101M  31.4G      0    307      0  38.2M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   111G  54.9T      0  7.50K      0  1.60G
+  draid2:3d:5c:0s-0       111G  54.5T      0  1.21K      0   838M
+    sdd                      -      -      0    252      0   171M
+    sde                      -      -      0    236      0   160M
+    sdf                      -      -      0    251      0   170M
+    sdg                      -      -      0    248      0   168M
+    sdh                      -      -      0    250      0   169M
+special                      -      -      -      -      -      -
+  mirror-1                218M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.7K
+    sdc                      -      -      0      1      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               101M  31.4G      0  6.29K      0   805M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   111G  54.9T      0  7.61K      0  1.62G
+  draid2:3d:5c:0s-0       111G  54.5T      0  1.21K      0   836M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    246      0   167M
+    sdf                      -      -      0    246      0   167M
+    sdg                      -      -      0    246      0   167M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1                218M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               101M  31.4G      0  6.40K      0   819M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   115G  54.9T      0  7.70K      0  1.57G
+  draid2:3d:5c:0s-0       115G  54.4T      0  1.16K      0   787M
+    sdd                      -      -      0    222      0   147M
+    sde                      -      -      0    243      0   162M
+    sdf                      -      -      0    254      0   169M
+    sdg                      -      -      0    248      0   166M
+    sdh                      -      -      0    214      0   142M
+special                      -      -      -      -      -      -
+  mirror-1               98.6M   464G      0    152      0  1.28M
+    sdb                      -      -      0     76      0   653K
+    sdc                      -      -      0     75      0   653K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              1.61M  31.5G      0  6.39K      0   818M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   115G  54.9T      0  7.61K      0  1.61G
+  draid2:3d:5c:0s-0       115G  54.4T      0  1.20K      0   831M
+    sdd                      -      -      0    229      0   155M
+    sde                      -      -      0    218      0   147M
+    sdf                      -      -      0    267      0   181M
+    sdg                      -      -      0    261      0   177M
+    sdh                      -      -      0    252      0   171M
+special                      -      -      -      -      -      -
+  mirror-1               98.6M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              1.61M  31.5G      0  6.40K      0   819M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   117G  54.9T      0  1.28K      0   770M
+  draid2:3d:5c:0s-0       117G  54.4T      0  1.14K      0   769M
+    sdd                      -      -      0    264      0   175M
+    sde                      -      -      0    247      0   163M
+    sdf                      -      -      0    212      0   140M
+    sdg                      -      -      0    223      0   147M
+    sdh                      -      -      0    219      0   144M
+special                      -      -      -      -      -      -
+  mirror-1               21.6M   464G      0    140      0  1.11M
+    sdb                      -      -      0     69      0   566K
+    sdc                      -      -      0     70      0   566K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   117G  54.9T      0  1.15K      0   758M
+  draid2:3d:5c:0s-0       117G  54.4T      0  1.15K      0   758M
+    sdd                      -      -      0    264      0   156M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    231      0   156M
+    sdg                      -      -      0    236      0   148M
+    sdh                      -      -      0    196      0   133M
+special                      -      -      -      -      -      -
+  mirror-1               21.6M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  1.12K      0   596M
+  draid2:3d:5c:0s-0       118G  54.4T      0    980      0   595M
+    sdd                      -      -      0    185      0   108M
+    sde                      -      -      0    183      0   103M
+    sdf                      -      -      0    195      0   119M
+    sdg                      -      -      0    182      0   115M
+    sdh                      -      -      0    234      0   150M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0    170      0  1.39M
+    sdb                      -      -      0     84      0   710K
+    sdc                      -      -      0     85      0   710K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  1.10K      0   762M
+  draid2:3d:5c:0s-0       118G  54.4T      0  1.10K      0   762M
+    sdd                      -      -      0    231      0   156M
+    sde                      -      -      0    212      0   144M
+    sdf                      -      -      0    223      0   151M
+    sdg                      -      -      0    229      0   155M
+    sdh                      -      -      0    231      0   156M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.7K
+    sdc                      -      -      0      1      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  2.45K      0   856M
+  draid2:3d:5c:0s-0       118G  54.4T      0    981      0   665M
+    sdd                      -      -      0    179      0   122M
+    sde                      -      -      0    209      0   142M
+    sdf                      -      -      0    192      0   130M
+    sdg                      -      -      0    191      0   130M
+    sdh                      -      -      0    208      0   141M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0  1.50K      0   192M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  7.76K      0  1.63G
+  draid2:3d:5c:0s-0       118G  54.4T      0  1.24K      0   833M
+    sdd                      -      -      0    255      0   173M
+    sde                      -      -      0    259      0   175M
+    sdf                      -      -      0    252      0   171M
+    sdg                      -      -      0    215      0   146M
+    sdh                      -      -      0    288      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.7K
+    sdc                      -      -      0      1      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0  6.52K      0   834M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  7.73K      0  1.63G
+  draid2:3d:5c:0s-0       118G  54.4T      0  1.21K      0   837M
+    sdd                      -      -      0    247      0   168M
+    sde                      -      -      0    244      0   166M
+    sdf                      -      -      0    249      0   169M
+    sdg                      -      -      0    247      0   168M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0  6.52K      0   834M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   118G  54.9T      0  7.75K      0  1.58G
+  draid2:3d:5c:0s-0       118G  54.4T      0  1.13K      0   783M
+    sdd                      -      -      0    233      0   158M
+    sde                      -      -      0    230      0   156M
+    sdf                      -      -      0    219      0   149M
+    sdg                      -      -      0    264      0   179M
+    sdh                      -      -      0    206      0   140M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0    121      0   981K
+    sdb                      -      -      0     61      0   491K
+    sdc                      -      -      0     59      0   491K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.24G  28.3G      0  6.50K      0   832M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   122G  54.9T      0  5.01K      0  1.26G
+  draid2:3d:5c:0s-0       122G  54.4T      0  1.18K      0   804M
+    sdd                      -      -      0    238      0   158M
+    sde                      -      -      0    238      0   158M
+    sdf                      -      -      0    243      0   161M
+    sdg                      -      -      0    248      0   165M
+    sdh                      -      -      0    244      0   162M
+special                      -      -      -      -      -      -
+  mirror-1               21.9M   464G      0      7      0  31.9K
+    sdb                      -      -      0      3      0  16.0K
+    sdc                      -      -      0      3      0  16.0K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0  3.81K      0   488M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   123G  54.9T      0  1.28K      0   757M
+  draid2:3d:5c:0s-0       123G  54.4T      0  1.13K      0   757M
+    sdd                      -      -      0    236      0   154M
+    sde                      -      -      0    231      0   151M
+    sdf                      -      -      0    233      0   152M
+    sdg                      -      -      0    228      0   148M
+    sdh                      -      -      0    234      0   152M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0    144      0  1.01M
+    sdb                      -      -      0     70      0   518K
+    sdc                      -      -      0     73      0   518K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   123G  54.9T      0  1.18K      0   818M
+  draid2:3d:5c:0s-0       123G  54.4T      0  1.18K      0   817M
+    sdd                      -      -      0    239      0   162M
+    sde                      -      -      0    244      0   165M
+    sdf                      -      -      0    232      0   157M
+    sdg                      -      -      0    250      0   169M
+    sdh                      -      -      0    240      0   163M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   123G  54.9T      0  1.13K      0   782M
+  draid2:3d:5c:0s-0       123G  54.4T      0  1.13K      0   782M
+    sdd                      -      -      0    231      0   157M
+    sde                      -      -      0    214      0   145M
+    sdf                      -      -      0    243      0   165M
+    sdg                      -      -      0    245      0   164M
+    sdh                      -      -      0    224      0   152M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.7K
+    sdc                      -      -      0      1      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   123G  54.9T      0  1.06K      0   722M
+  draid2:3d:5c:0s-0       123G  54.4T      0  1.04K      0   722M
+    sdd                      -      -      0    210      0   142M
+    sde                      -      -      0    216      0   147M
+    sdf                      -      -      0    206      0   140M
+    sdg                      -      -      0    198      0   134M
+    sdh                      -      -      0    235      0   159M
+special                      -      -      -      -      -      -
+  mirror-1               21.7M   464G      0     19      0   175K
+    sdb                      -      -      0      9      0  87.7K
+    sdc                      -      -      0      9      0  87.7K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   126G  54.9T      0  2.09K      0   890M
+  draid2:3d:5c:0s-0       126G  54.4T      0  1.21K      0   799M
+    sdd                      -      -      0    267      0   172M
+    sde                      -      -      0    261      0   169M
+    sdf                      -      -      0    246      0   158M
+    sdg                      -      -      0    243      0   156M
+    sdh                      -      -      0    225      0   144M
+special                      -      -      -      -      -      -
+  mirror-1               21.8M   464G      0    180      0   909K
+    sdb                      -      -      0     90      0   455K
+    sdc                      -      -      0     89      0   455K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0    728      0  91.1M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   126G  54.9T      0  7.58K      0  1.61G
+  draid2:3d:5c:0s-0       126G  54.4T      0  1.20K      0   831M
+    sdd                      -      -      0    235      0   159M
+    sde                      -      -      0    235      0   159M
+    sdf                      -      -      0    247      0   167M
+    sdg                      -      -      0    260      0   176M
+    sdh                      -      -      0    252      0   170M
+special                      -      -      -      -      -      -
+  mirror-1               21.8M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0  6.38K      0   816M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   126G  54.9T      0  7.36K      0  1.59G
+  draid2:3d:5c:0s-0       126G  54.4T      0  1.21K      0   838M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    246      0   167M
+    sdf                      -      -      0    248      0   169M
+    sdg                      -      -      0    246      0   167M
+    sdh                      -      -      0    247      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               21.8M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.6K
+    sdc                      -      -      0      1      0  87.6K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0  6.15K      0   787M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   126G  54.9T      0  7.58K      0  1.61G
+  draid2:3d:5c:0s-0       126G  54.4T      0  1.21K      0   837M
+    sdd                      -      -      0    247      0   167M
+    sde                      -      -      0    247      0   167M
+    sdf                      -      -      0    247      0   167M
+    sdg                      -      -      0    247      0   167M
+    sdh                      -      -      0    247      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               21.8M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0  6.38K      0   816M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   126G  54.9T      0  6.68K      0  1.49G
+  draid2:3d:5c:0s-0       126G  54.4T      0  1.19K      0   827M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    257      0   174M
+    sdf                      -      -      0    247      0   167M
+    sdg                      -      -      0    230      0   155M
+    sdh                      -      -      0    244      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               21.8M   464G      0     19      0   303K
+    sdb                      -      -      0      9      0   152K
+    sdc                      -      -      0      9      0   151K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.12G  28.4G      0  5.46K      0   699M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   130G  54.9T      0  1.14K      0   693M
+  draid2:3d:5c:0s-0       130G  54.4T      0  1.03K      0   693M
+    sdd                      -      -      0    209      0   138M
+    sde                      -      -      0    222      0   146M
+    sdf                      -      -      0    195      0   128M
+    sdg                      -      -      0    209      0   138M
+    sdh                      -      -      0    216      0   142M
+special                      -      -      -      -      -      -
+  mirror-1               22.1M   464G      0    115      0   862K
+    sdb                      -      -      0     58      0   431K
+    sdc                      -      -      0     56      0   431K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   131G  54.9T      0  1.35K      0   795M
+  draid2:3d:5c:0s-0       131G  54.4T      0  1.20K      0   794M
+    sdd                      -      -      0    240      0   155M
+    sde                      -      -      0    240      0   155M
+    sdf                      -      -      0    253      0   164M
+    sdg                      -      -      0    253      0   164M
+    sdh                      -      -      0    242      0   156M
+special                      -      -      -      -      -      -
+  mirror-1               22.2M   464G      0    156      0   901K
+    sdb                      -      -      0     78      0   450K
+    sdc                      -      -      0     77      0   450K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   131G  54.9T      0  1.17K      0   806M
+  draid2:3d:5c:0s-0       131G  54.4T      0  1.16K      0   806M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    219      0   148M
+    sdf                      -      -      0    245      0   167M
+    sdg                      -      -      0    241      0   164M
+    sdh                      -      -      0    235      0   160M
+special                      -      -      -      -      -      -
+  mirror-1               22.2M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.3K
+    sdc                      -      -      0      1      0  87.3K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   131G  54.9T      0  1.21K      0   839M
+  draid2:3d:5c:0s-0       131G  54.4T      0  1.21K      0   839M
+    sdd                      -      -      0    251      0   170M
+    sde                      -      -      0    252      0   171M
+    sdf                      -      -      0    260      0   176M
+    sdg                      -      -      0    231      0   157M
+    sdh                      -      -      0    243      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               22.2M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   131G  54.9T      0  6.61K      0  1.49G
+  draid2:3d:5c:0s-0       131G  54.4T      0  1.21K      0   836M
+    sdd                      -      -      0    255      0   173M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    235      0   160M
+    sdg                      -      -      0    242      0   164M
+    sdh                      -      -      0    253      0   172M
+special                      -      -      -      -      -      -
+  mirror-1               22.2M   464G      0      3      0   175K
+    sdb                      -      -      0      1      0  87.6K
+    sdc                      -      -      0      1      0  87.6K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0  5.41K      0   692M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   131G  54.9T      0  7.64K      0  1.62G
+  draid2:3d:5c:0s-0       131G  54.4T      0  1.21K      0   836M
+    sdd                      -      -      0    249      0   169M
+    sde                      -      -      0    247      0   167M
+    sdf                      -      -      0    246      0   166M
+    sdg                      -      -      0    247      0   167M
+    sdh                      -      -      0    247      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               22.2M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0  6.43K      0   822M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   135G  54.9T      0  7.67K      0  1.57G
+  draid2:3d:5c:0s-0       135G  54.4T      0  1.16K      0   788M
+    sdd                      -      -      0    228      0   151M
+    sde                      -      -      0    252      0   168M
+    sdf                      -      -      0    237      0   158M
+    sdg                      -      -      0    242      0   160M
+    sdh                      -      -      0    229      0   151M
+special                      -      -      -      -      -      -
+  mirror-1               22.3M   464G      0    143      0  1.01M
+    sdb                      -      -      0     69      0   517K
+    sdc                      -      -      0     73      0   517K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0  6.37K      0   815M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   135G  54.9T      0  7.68K      0  1.61G
+  draid2:3d:5c:0s-0       135G  54.4T      0  1.18K      0   821M
+    sdd                      -      -      0    211      0   143M
+    sde                      -      -      0    256      0   174M
+    sdf                      -      -      0    267      0   181M
+    sdg                      -      -      0    249      0   169M
+    sdh                      -      -      0    228      0   155M
+special                      -      -      -      -      -      -
+  mirror-1               22.3M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.15G  28.4G      0  6.50K      0   832M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   137G  54.9T      0  2.21K      0   753M
+  draid2:3d:5c:0s-0       137G  54.4T      0    922      0   603M
+    sdd                      -      -      0    211      0   139M
+    sde                      -      -      0    168      0   111M
+    sdf                      -      -      0    163      0   106M
+    sdg                      -      -      0    180      0   119M
+    sdh                      -      -      0    196      0   129M
+special                      -      -      -      -      -      -
+  mirror-1               22.5M   464G      0    142      0  1.06M
+    sdb                      -      -      0     71      0   536K
+    sdc                      -      -      0     69      0   536K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0  1.15K      0   147M
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   137G  54.9T      0  1.26K      0   831M
+  draid2:3d:5c:0s-0       137G  54.4T      0  1.19K      0   828M
+    sdd                      -      -      0    228      0   155M
+    sde                      -      -      0    253      0   171M
+    sdf                      -      -      0    245      0   166M
+    sdg                      -      -      0    251      0   170M
+    sdh                      -      -      0    243      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               22.5M   464G      0     65      0  2.26M
+    sdb                      -      -      0     32      0  1.14M
+    sdc                      -      -      0     33      0  1.14M
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   138G  54.9T      0  1.41K      0   751M
+  draid2:3d:5c:0s-0       138G  54.4T      0  1.24K      0   750M
+    sdd                      -      -      0    245      0   158M
+    sde                      -      -      0    283      0   144M
+    sdf                      -      -      0    279      0   147M
+    sdg                      -      -      0    227      0   146M
+    sdh                      -      -      0    239      0   154M
+special                      -      -      -      -      -      -
+  mirror-1               23.8M   464G      0    172      0  1.34M
+    sdb                      -      -      0     86      0   687K
+    sdc                      -      -      0     86      0   686K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   138G  54.9T      0  1.22K      0   835M
+  draid2:3d:5c:0s-0       138G  54.4T      0  1.20K      0   834M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    244      0   166M
+    sdf                      -      -      0    241      0   163M
+    sdg                      -      -      0    253      0   172M
+    sdh                      -      -      0    248      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               23.8M   464G      0     19      0   868K
+    sdb                      -      -      0      9      0   434K
+    sdc                      -      -      0      9      0   435K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   138G  54.9T      0  1.22K      0   830M
+  draid2:3d:5c:0s-0       138G  54.4T      0  1.20K      0   829M
+    sdd                      -      -      0    240      0   163M
+    sde                      -      -      0    235      0   159M
+    sdf                      -      -      0    247      0   168M
+    sdg                      -      -      0    261      0   177M
+    sdh                      -      -      0    239      0   162M
+special                      -      -      -      -      -      -
+  mirror-1               23.8M   464G      0     27      0   907K
+    sdb                      -      -      0     13      0   454K
+    sdc                      -      -      0     13      0   454K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   138G  54.9T      0  1.22K      0   830M
+  draid2:3d:5c:0s-0       138G  54.4T      0  1.20K      0   829M
+    sdd                      -      -      0    245      0   166M
+    sde                      -      -      0    247      0   168M
+    sdf                      -      -      0    239      0   162M
+    sdg                      -      -      0    250      0   170M
+    sdh                      -      -      0    243      0   164M
+special                      -      -      -      -      -      -
+  mirror-1               23.8M   464G      0     27      0   749K
+    sdb                      -      -      0     13      0   374K
+    sdc                      -      -      0     13      0   374K
+logs                         -      -      -      -      -      -
+  nvme0n1p2              3.25G  28.3G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.39K      0   793M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.21K      0   792M
+    sdd                      -      -      0    256      0   165M
+    sde                      -      -      0    254      0   163M
+    sdf                      -      -      0    254      0   163M
+    sdg                      -      -      0    216      0   138M
+    sdh                      -      -      0    254      0   163M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0    188      0  1.17M
+    sdb                      -      -      0     95      0   600K
+    sdc                      -      -      0     93      0   600K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.21K      0   838M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.21K      0   839M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    247      0   168M
+    sdg                      -      -      0    248      0   168M
+    sdh                      -      -      0    252      0   171M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.21K      0   836M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.20K      0   834M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    247      0   168M
+    sdf                      -      -      0    250      0   170M
+    sdg                      -      -      0    248      0   168M
+    sdh                      -      -      0    237      0   161M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0     11      0   525K
+    sdb                      -      -      0      5      0   263K
+    sdc                      -      -      0      5      0   263K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    250      0   169M
+    sde                      -      -      0    239      0   162M
+    sdf                      -      -      0    232      0   157M
+    sdg                      -      -      0    252      0   171M
+    sdh                      -      -      0    243      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0     11      0   526K
+    sdb                      -      -      0      5      0   263K
+    sdc                      -      -      0      5      0   263K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.21K      0   821M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.18K      0   820M
+    sdd                      -      -      0    253      0   171M
+    sde                      -      -      0    242      0   164M
+    sdf                      -      -      0    247      0   167M
+    sdg                      -      -      0    231      0   156M
+    sdh                      -      -      0    237      0   160M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0     23      0   575K
+    sdb                      -      -      0     11      0   287K
+    sdc                      -      -      0     11      0   287K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.20K      0   825M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    242      0   164M
+    sde                      -      -      0    238      0   161M
+    sdf                      -      -      0    244      0   165M
+    sdg                      -      -      0    246      0   166M
+    sdh                      -      -      0    248      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0     11      0   526K
+    sdb                      -      -      0      5      0   263K
+    sdc                      -      -      0      5      0   263K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   141G  54.9T      0  1.20K      0   822M
+  draid2:3d:5c:0s-0       141G  54.4T      0  1.18K      0   822M
+    sdd                      -      -      0    248      0   168M
+    sde                      -      -      0    247      0   168M
+    sdf                      -      -      0    238      0   162M
+    sdg                      -      -      0    231      0   157M
+    sdh                      -      -      0    247      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.2M   464G      0     19      0   559K
+    sdb                      -      -      0      9      0   279K
+    sdc                      -      -      0      9      0   279K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.40K      0   790M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.21K      0   790M
+    sdd                      -      -      0    229      0   145M
+    sde                      -      -      0    248      0   159M
+    sdf                      -      -      0    256      0   164M
+    sdg                      -      -      0    254      0   163M
+    sdh                      -      -      0    248      0   159M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0    193      0  1.19M
+    sdb                      -      -      0     96      0   611K
+    sdc                      -      -      0     96      0   611K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.20K      0   833M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.20K      0   832M
+    sdd                      -      -      0    229      0   156M
+    sde                      -      -      0    254      0   172M
+    sdf                      -      -      0    246      0   167M
+    sdg                      -      -      0    252      0   170M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.21K      0   834M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.20K      0   833M
+    sdd                      -      -      0    250      0   169M
+    sde                      -      -      0    241      0   164M
+    sdf                      -      -      0    236      0   160M
+    sdg                      -      -      0    249      0   169M
+    sdh                      -      -      0    252      0   171M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0      7      0   345K
+    sdb                      -      -      0      3      0   173K
+    sdc                      -      -      0      3      0   173K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.20K      0   829M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.19K      0   828M
+    sdd                      -      -      0    252      0   171M
+    sde                      -      -      0    246      0   167M
+    sdf                      -      -      0    238      0   162M
+    sdg                      -      -      0    252      0   171M
+    sdh                      -      -      0    233      0   158M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   175K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.22K      0   825M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    242      0   164M
+    sde                      -      -      0    239      0   162M
+    sdf                      -      -      0    247      0   167M
+    sdg                      -      -      0    241      0   163M
+    sdh                      -      -      0    248      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0     27      0   749K
+    sdb                      -      -      0     13      0   375K
+    sdc                      -      -      0     13      0   375K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.20K      0   826M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    242      0   164M
+    sde                      -      -      0    247      0   168M
+    sdf                      -      -      0    242      0   164M
+    sdg                      -      -      0    245      0   166M
+    sdh                      -      -      0    241      0   163M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0     11      0   527K
+    sdb                      -      -      0      5      0   263K
+    sdc                      -      -      0      5      0   263K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.19K      0   824M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    247      0   167M
+    sde                      -      -      0    232      0   157M
+    sdf                      -      -      0    242      0   164M
+    sdg                      -      -      0    244      0   166M
+    sdh                      -      -      0    249      0   169M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   146G  54.9T      0  1.24K      0   825M
+  draid2:3d:5c:0s-0       146G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    245      0   166M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    245      0   166M
+    sdg                      -      -      0    251      0   170M
+    sdh                      -      -      0    233      0   158M
+special                      -      -      -      -      -      -
+  mirror-1               25.3M   464G      0     51      0   686K
+    sdb                      -      -      0     25      0   343K
+    sdc                      -      -      0     25      0   343K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.32K      0   783M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   782M
+    sdd                      -      -      0    244      0   156M
+    sde                      -      -      0    248      0   159M
+    sdf                      -      -      0    261      0   168M
+    sdg                      -      -      0    223      0   143M
+    sdh                      -      -      0    243      0   156M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0    131      0   840K
+    sdb                      -      -      0     66      0   420K
+    sdc                      -      -      0     65      0   420K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   835M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   835M
+    sdd                      -      -      0    248      0   168M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    249      0   168M
+    sdg                      -      -      0    243      0   164M
+    sdh                      -      -      0    250      0   169M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     11      0   524K
+    sdb                      -      -      0      5      0   262K
+    sdc                      -      -      0      5      0   262K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   834M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   833M
+    sdd                      -      -      0    262      0   178M
+    sde                      -      -      0    238      0   161M
+    sdf                      -      -      0    242      0   164M
+    sdg                      -      -      0    247      0   167M
+    sdh                      -      -      0    241      0   163M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   175K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    248      0   168M
+    sdg                      -      -      0    241      0   163M
+    sdh                      -      -      0    237      0   161M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     23      0   574K
+    sdb                      -      -      0     11      0   287K
+    sdc                      -      -      0     11      0   287K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    240      0   162M
+    sde                      -      -      0    244      0   165M
+    sdf                      -      -      0    250      0   170M
+    sdg                      -      -      0    238      0   161M
+    sdh                      -      -      0    243      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   826M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    249      0   169M
+    sde                      -      -      0    250      0   170M
+    sdf                      -      -      0    246      0   167M
+    sdg                      -      -      0    234      0   159M
+    sdh                      -      -      0    237      0   161M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    250      0   169M
+    sde                      -      -      0    244      0   166M
+    sdf                      -      -      0    245      0   166M
+    sdg                      -      -      0    240      0   163M
+    sdh                      -      -      0    239      0   162M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.34K      0   708M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.14K      0   706M
+    sdd                      -      -      0    212      0   123M
+    sde                      -      -      0    234      0   141M
+    sdf                      -      -      0    215      0   130M
+    sdg                      -      -      0    250      0   153M
+    sdh                      -      -      0    257      0   157M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0    203      0  1.35M
+    sdb                      -      -      0    101      0   690K
+    sdc                      -      -      0    101      0   690K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   830M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   830M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    241      0   163M
+    sdf                      -      -      0    233      0   158M
+    sdg                      -      -      0    254      0   173M
+    sdh                      -      -      0    250      0   170M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   840M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   840M
+    sdd                      -      -      0    252      0   171M
+    sde                      -      -      0    243      0   165M
+    sdf                      -      -      0    243      0   165M
+    sdg                      -      -      0    254      0   172M
+    sdh                      -      -      0    245      0   166M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   350K
+    sdb                      -      -      0      3      0   175K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   830M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   830M
+    sdd                      -      -      0    247      0   167M
+    sde                      -      -      0    242      0   164M
+    sdf                      -      -      0    243      0   165M
+    sdg                      -      -      0    243      0   165M
+    sdh                      -      -      0    249      0   169M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     11      0   526K
+    sdb                      -      -      0      5      0   263K
+    sdc                      -      -      0      5      0   263K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    238      0   161M
+    sde                      -      -      0    250      0   169M
+    sdf                      -      -      0    249      0   169M
+    sdg                      -      -      0    235      0   159M
+    sdh                      -      -      0    245      0   166M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     11      0   367K
+    sdb                      -      -      0      5      0   183K
+    sdc                      -      -      0      5      0   183K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   826M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    245      0   166M
+    sde                      -      -      0    239      0   162M
+    sdf                      -      -      0    240      0   163M
+    sdg                      -      -      0    247      0   167M
+    sdh                      -      -      0    248      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     23      0   733K
+    sdb                      -      -      0     11      0   367K
+    sdc                      -      -      0     11      0   367K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.19K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    235      0   159M
+    sde                      -      -      0    248      0   168M
+    sdf                      -      -      0    243      0   164M
+    sdg                      -      -      0    244      0   165M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      3      0   176K
+    sdb                      -      -      0      1      0  87.8K
+    sdc                      -      -      0      1      0  87.8K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    248      0   168M
+    sde                      -      -      0    235      0   159M
+    sdf                      -      -      0    249      0   169M
+    sdg                      -      -      0    253      0   171M
+    sdh                      -      -      0    233      0   157M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     19      0   559K
+    sdb                      -      -      0      9      0   279K
+    sdc                      -      -      0      9      0   279K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.35K      0   780M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.18K      0   779M
+    sdd                      -      -      0    240      0   155M
+    sde                      -      -      0    262      0   169M
+    sdf                      -      -      0    245      0   157M
+    sdg                      -      -      0    224      0   143M
+    sdh                      -      -      0    240      0   155M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0    174      0  1.01M
+    sdb                      -      -      0     86      0   515K
+    sdc                      -      -      0     87      0   515K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   840M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   840M
+    sdd                      -      -      0    249      0   168M
+    sde                      -      -      0    251      0   169M
+    sdf                      -      -      0    248      0   168M
+    sdg                      -      -      0    245      0   166M
+    sdh                      -      -      0    249      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   835M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   834M
+    sdd                      -      -      0    246      0   166M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    252      0   171M
+    sdg                      -      -      0    248      0   167M
+    sdh                      -      -      0    242      0   164M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     19      0   870K
+    sdb                      -      -      0      9      0   435K
+    sdc                      -      -      0      9      0   435K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   823M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   823M
+    sdd                      -      -      0    241      0   163M
+    sde                      -      -      0    246      0   167M
+    sdf                      -      -      0    257      0   174M
+    sdg                      -      -      0    236      0   160M
+    sdh                      -      -      0    234      0   159M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0     23      0   574K
+    sdb                      -      -      0     11      0   287K
+    sdc                      -      -      0     11      0   287K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   823M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   822M
+    sdd                      -      -      0    248      0   168M
+    sde                      -      -      0    240      0   161M
+    sdf                      -      -      0    244      0   164M
+    sdg                      -      -      0    246      0   167M
+    sdh                      -      -      0    237      0   161M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   822M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   822M
+    sdd                      -      -      0    243      0   165M
+    sde                      -      -      0    242      0   163M
+    sdf                      -      -      0    242      0   163M
+    sdg                      -      -      0    238      0   162M
+    sdh                      -      -      0    247      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   350K
+    sdb                      -      -      0      3      0   175K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   823M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    247      0   166M
+    sdf                      -      -      0    245      0   165M
+    sdg                      -      -      0    245      0   166M
+    sdh                      -      -      0    239      0   162M
+special                      -      -      -      -      -      -
+  mirror-1               25.4M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.33K      0   760M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.15K      0   758M
+    sdd                      -      -      0    230      0   147M
+    sde                      -      -      0    235      0   151M
+    sdf                      -      -      0    217      0   139M
+    sdg                      -      -      0    239      0   156M
+    sdh                      -      -      0    256      0   166M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0    181      0  1.60M
+    sdb                      -      -      0     91      0   821K
+    sdc                      -      -      0     89      0   821K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   839M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   839M
+    sdd                      -      -      0    247      0   168M
+    sde                      -      -      0    247      0   168M
+    sdf                      -      -      0    245      0   166M
+    sdg                      -      -      0    248      0   168M
+    sdh                      -      -      0    247      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   839M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   838M
+    sdd                      -      -      0    247      0   167M
+    sde                      -      -      0    249      0   169M
+    sdf                      -      -      0    249      0   169M
+    sdg                      -      -      0    245      0   166M
+    sdh                      -      -      0    247      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     11      0   519K
+    sdb                      -      -      0      5      0   259K
+    sdc                      -      -      0      5      0   259K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   832M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   831M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    246      0   167M
+    sdf                      -      -      0    245      0   166M
+    sdg                      -      -      0    242      0   164M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     19      0   718K
+    sdb                      -      -      0      9      0   359K
+    sdc                      -      -      0      9      0   359K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   826M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   826M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    248      0   168M
+    sdf                      -      -      0    241      0   163M
+    sdg                      -      -      0    246      0   167M
+    sdh                      -      -      0    239      0   162M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     15      0   383K
+    sdb                      -      -      0      7      0   192K
+    sdc                      -      -      0      7      0   191K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    245      0   166M
+    sde                      -      -      0    252      0   171M
+    sdf                      -      -      0    239      0   162M
+    sdg                      -      -      0    238      0   161M
+    sdh                      -      -      0    241      0   164M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   175K
+    sdc                      -      -      0      3      0   175K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   827M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   827M
+    sdd                      -      -      0    247      0   168M
+    sde                      -      -      0    248      0   168M
+    sdf                      -      -      0    244      0   166M
+    sdg                      -      -      0    237      0   161M
+    sdh                      -      -      0    243      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     19      0   559K
+    sdb                      -      -      0      9      0   279K
+    sdc                      -      -      0      9      0   279K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.23K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    245      0   166M
+    sde                      -      -      0    237      0   161M
+    sdf                      -      -      0    242      0   164M
+    sdg                      -      -      0    245      0   166M
+    sdh                      -      -      0    247      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     39      0   479K
+    sdb                      -      -      0     19      0   239K
+    sdc                      -      -      0     19      0   239K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.30K      0   774M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.18K      0   773M
+    sdd                      -      -      0    231      0   148M
+    sde                      -      -      0    222      0   142M
+    sdf                      -      -      0    252      0   162M
+    sdg                      -      -      0    266      0   172M
+    sdh                      -      -      0    235      0   150M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0    125      0   890K
+    sdb                      -      -      0     62      0   444K
+    sdc                      -      -      0     62      0   444K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   836M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.21K      0   837M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    246      0   166M
+    sdf                      -      -      0    247      0   168M
+    sdg                      -      -      0    251      0   170M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0      0      0      0
+    sdb                      -      -      0      0      0      0
+    sdc                      -      -      0      0      0      0
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.22K      0   834M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.20K      0   832M
+    sdd                      -      -      0    242      0   164M
+    sde                      -      -      0    244      0   166M
+    sdf                      -      -      0    248      0   169M
+    sdg                      -      -      0    246      0   167M
+    sdh                      -      -      0    245      0   166M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     19      0   863K
+    sdb                      -      -      0      9      0   431K
+    sdc                      -      -      0      9      0   431K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   827M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   827M
+    sdd                      -      -      0    244      0   165M
+    sde                      -      -      0    243      0   164M
+    sdf                      -      -      0    238      0   161M
+    sdg                      -      -      0    249      0   168M
+    sdh                      -      -      0    249      0   168M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     11      0   367K
+    sdb                      -      -      0      5      0   183K
+    sdc                      -      -      0      5      0   183K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   825M
+    sdd                      -      -      0    234      0   159M
+    sde                      -      -      0    243      0   165M
+    sdf                      -      -      0    241      0   164M
+    sdg                      -      -      0    250      0   170M
+    sdh                      -      -      0    246      0   167M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     23      0   733K
+    sdb                      -      -      0     11      0   367K
+    sdc                      -      -      0     11      0   367K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.20K      0   824M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    246      0   167M
+    sde                      -      -      0    240      0   162M
+    sdf                      -      -      0    243      0   165M
+    sdg                      -      -      0    243      0   165M
+    sdh                      -      -      0    245      0   166M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0      7      0   351K
+    sdb                      -      -      0      3      0   176K
+    sdc                      -      -      0      3      0   176K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.21K      0   825M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.19K      0   824M
+    sdd                      -      -      0    238      0   161M
+    sde                      -      -      0    245      0   166M
+    sdf                      -      -      0    248      0   168M
+    sdg                      -      -      0    242      0   164M
+    sdh                      -      -      0    244      0   165M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0     15      0   383K
+    sdb                      -      -      0      7      0   191K
+    sdc                      -      -      0      7      0   191K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----
+                           capacity     operations     bandwidth 
+pool                     alloc   free   read  write   read  write
+-----------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_slog   149G  54.9T      0  1.34K      0   739M
+  draid2:3d:5c:0s-0       149G  54.4T      0  1.13K      0   738M
+    sdd                      -      -      0    250      0   161M
+    sde                      -      -      0    240      0   154M
+    sdf                      -      -      0    228      0   146M
+    sdg                      -      -      0    218      0   139M
+    sdh                      -      -      0    217      0   139M
+special                      -      -      -      -      -      -
+  mirror-1               25.6M   464G      0    212      0  1.30M
+    sdb                      -      -      0    106      0   668K
+    sdc                      -      -      0    106      0   668K
+logs                         -      -      -      -      -      -
+  nvme0n1p2               128K  31.5G      0      0      0      0
+-----------------------  -----  -----  -----  -----  -----  -----

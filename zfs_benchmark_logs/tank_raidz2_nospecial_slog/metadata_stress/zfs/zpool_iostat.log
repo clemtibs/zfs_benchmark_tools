@@ -1,0 +1,819 @@
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  2.19K  42.6K   436M
+  raidz2-0                   111G  54.5T      0  2.09K  41.3K   423M
+    sdd                         -      -      0    426  8.25K  84.7M
+    sde                         -      -      0    364  8.25K  84.7M
+    sdf                         -      -      0    475  8.25K  84.7M
+    sdg                         -      -      0    424  8.25K  84.7M
+    sdh                         -      -      0    452  8.25K  84.7M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0    104  1.41K  13.0M
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0     19      0  79.8K
+  raidz2-0                   111G  54.5T      0     19      0  79.8K
+    sdd                         -      -      0      3      0  16.0K
+    sde                         -      -      0      3      0  16.0K
+    sdf                         -      -      0      3      0  16.0K
+    sdg                         -      -      0      3      0  16.0K
+    sdh                         -      -      0      3      0  16.0K
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 14.2M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 14.2M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 14.2M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.66K      0   163M
+  raidz2-0                   111G  54.5T      0  1.66K      0   163M
+    sdd                         -      -      0    332      0  32.9M
+    sde                         -      -      0    313      0  32.2M
+    sdf                         -      -      0    336      0  33.1M
+    sdg                         -      -      0    327      0  33.1M
+    sdh                         -      -      0    397      0  32.7M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 14.2M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0  2.16K      0   287M
+  raidz2-0                   110G  54.5T      0  2.16K      0   287M
+    sdd                         -      -      0    461      0  57.1M
+    sde                         -      -      0    407      0  57.8M
+    sdf                         -      -      0    464      0  56.9M
+    sdg                         -      -      0    452      0  56.9M
+    sdh                         -      -      0    412      0  57.3M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 30.6M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 30.6M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 30.6M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 30.6M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 30.6M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0  2.95K      0   439M
+  raidz2-0                   110G  54.5T      0  2.95K      0   439M
+    sdd                         -      -      0    651      0  87.7M
+    sde                         -      -      0    592      0  87.8M
+    sdf                         -      -      0    656      0  87.7M
+    sdg                         -      -      0    540      0  87.7M
+    sdh                         -      -      0    578      0  87.7M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 16.5M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 16.5M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 16.5M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 16.5M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   110G  54.5T      0      0      0      0
+  raidz2-0                   110G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                 16.5M  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  2.62K      0   445M
+  raidz2-0                   111G  54.5T      0  2.62K      0   445M
+    sdd                         -      -      0    553      0  89.0M
+    sde                         -      -      0    553      0  89.0M
+    sdf                         -      -      0    527      0  89.0M
+    sdg                         -      -      0    541      0  88.9M
+    sdh                         -      -      0    512      0  89.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  3.06K      0   445M
+  raidz2-0                   111G  54.5T      0  3.06K      0   445M
+    sdd                         -      -      0    613      0  88.9M
+    sde                         -      -      0    656      0  89.0M
+    sdf                         -      -      0    684      0  88.9M
+    sdg                         -      -      0    582      0  88.9M
+    sdh                         -      -      0    597      0  89.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0     50      0   239K
+  raidz2-0                   111G  54.5T      0     50      0   239K
+    sdd                         -      -      0      7      0  39.8K
+    sde                         -      -      0      9      0  43.8K
+    sdf                         -      -      0      9      0  43.8K
+    sdg                         -      -      0     10      0  47.8K
+    sdh                         -      -      0      7      0  31.9K
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  3.21K      0   440M
+  raidz2-0                   111G  54.5T      0  3.21K      0   440M
+    sdd                         -      -      0    596      0  88.0M
+    sde                         -      -      0    650      0  88.0M
+    sdf                         -      -      0    681      0  88.0M
+    sdg                         -      -      0    659      0  88.0M
+    sdh                         -      -      0    697      0  88.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0     19      0  79.6K
+  raidz2-0                   111G  54.5T      0     19      0  79.6K
+    sdd                         -      -      0      3      0  15.9K
+    sde                         -      -      0      3      0  15.9K
+    sdf                         -      -      0      3      0  15.9K
+    sdg                         -      -      0      3      0  15.9K
+    sdh                         -      -      0      3      0  15.9K
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  2.44K      0   423M
+  raidz2-0                   111G  54.5T      0  2.44K      0   423M
+    sdd                         -      -      0    443      0  84.6M
+    sde                         -      -      0    496      0  84.6M
+    sdf                         -      -      0    560      0  84.6M
+    sdg                         -      -      0    490      0  84.7M
+    sdh                         -      -      0    512      0  84.8M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0    532      0  21.6M
+  raidz2-0                   111G  54.5T      0    532      0  21.6M
+    sdd                         -      -      0     93      0  4.30M
+    sde                         -      -      0    107      0  4.30M
+    sdf                         -      -      0    106      0  4.28M
+    sdg                         -      -      0    103      0  4.15M
+    sdh                         -      -      0    111      0  4.08M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.88K      0   372M
+  raidz2-0                   111G  54.5T      0  1.89K      0   373M
+    sdd                         -      -      0    398      0  74.8M
+    sde                         -      -      0    370      0  74.8M
+    sdf                         -      -      0    385      0  74.5M
+    sdg                         -      -      0    385      0  74.8M
+    sdh                         -      -      0    400      0  74.8M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.16K      0  73.0M
+  raidz2-0                   111G  54.5T      0  1.15K      0  71.1M
+    sdd                         -      -      0    237      0  14.0M
+    sde                         -      -      0    207      0  14.0M
+    sdf                         -      -      0    254      0  14.2M
+    sdg                         -      -      0    219      0  13.9M
+    sdh                         -      -      0    251      0  13.9M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.58K      0   297M
+  raidz2-0                   111G  54.5T      0  1.58K      0   297M
+    sdd                         -      -      0    312      0  59.5M
+    sde                         -      -      0    294      0  59.5M
+    sdf                         -      -      0    326      0  58.4M
+    sdg                         -      -      0    332      0  60.0M
+    sdh                         -      -      0    359      0  60.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.46K      0   149M
+  raidz2-0                   111G  54.5T      0  1.46K      0   149M
+    sdd                         -      -      0    334      0  29.7M
+    sde                         -      -      0    308      0  29.6M
+    sdf                         -      -      0    266      0  30.7M
+    sdg                         -      -      0    255      0  29.1M
+    sdh                         -      -      0    333      0  29.2M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.20K      0   223M
+  raidz2-0                   111G  54.5T      0  1.20K      0   223M
+    sdd                         -      -      0    262      0  44.4M
+    sde                         -      -      0    250      0  45.1M
+    sdf                         -      -      0    229      0  45.0M
+    sdg                         -      -      0    229      0  43.6M
+    sdh                         -      -      0    260      0  45.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.79K      0   219M
+  raidz2-0                   111G  54.5T      0  1.79K      0   219M
+    sdd                         -      -      0    360      0  44.0M
+    sde                         -      -      0    325      0  43.3M
+    sdf                         -      -      0    396      0  43.3M
+    sdg                         -      -      0    365      0  44.8M
+    sdh                         -      -      0    387      0  43.3M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.04K      0   197M
+  raidz2-0                   111G  54.5T      0  1.04K      0   197M
+    sdd                         -      -      0    178      0  38.8M
+    sde                         -      -      0    226      0  39.8M
+    sdf                         -      -      0    236      0  39.9M
+    sdg                         -      -      0    221      0  39.9M
+    sdh                         -      -      0    208      0  39.2M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.92K      0   245M
+  raidz2-0                   111G  54.5T      0  1.92K      0   244M
+    sdd                         -      -      0    373      0  49.5M
+    sde                         -      -      0    388      0  48.5M
+    sdf                         -      -      0    419      0  48.4M
+    sdg                         -      -      0    369      0  48.5M
+    sdh                         -      -      0    414      0  49.1M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  1.28K      0   148M
+  raidz2-0                   111G  54.5T      0  1.28K      0   148M
+    sdd                         -      -      0    261      0  30.0M
+    sde                         -      -      0    261      0  30.0M
+    sdf                         -      -      0    253      0  30.0M
+    sdg                         -      -      0    265      0  27.9M
+    sdh                         -      -      0    267      0  30.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  2.10K      0   292M
+  raidz2-0                   111G  54.5T      0  2.10K      0   292M
+    sdd                         -      -      0    464      0  58.0M
+    sde                         -      -      0    408      0  58.0M
+    sdf                         -      -      0    405      0  58.0M
+    sdg                         -      -      0    431      0  60.1M
+    sdh                         -      -      0    440      0  58.0M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0      0      0      0
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0    619      0  94.4M
+  raidz2-0                   111G  54.5T      0    619      0  94.4M
+    sdd                         -      -      0    121      0  18.9M
+    sde                         -      -      0    117      0  18.9M
+    sdf                         -      -      0    117      0  18.9M
+    sdg                         -      -      0    125      0  18.9M
+    sdh                         -      -      0    139      0  18.9M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0      0      0      0
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  3.80K      0   421M
+  raidz2-0                   111G  54.5T      0  2.32K      0   351M
+    sdd                         -      -      0    443      0  70.3M
+    sde                         -      -      0    478      0  70.3M
+    sdf                         -      -      0    505      0  70.3M
+    sdg                         -      -      0    488      0  70.3M
+    sdh                         -      -      0    461      0  70.3M
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0  1.48K      0  69.9M
+--------------------------  -----  -----  -----  -----  -----  -----
+                              capacity     operations     bandwidth 
+pool                        alloc   free   read  write   read  write
+--------------------------  -----  -----  -----  -----  -----  -----
+tank_raidz2_nospecial_slog   111G  54.5T      0  2.13K      0  13.6M
+  raidz2-0                   111G  54.5T      0      0      0      0
+    sdd                         -      -      0      0      0      0
+    sde                         -      -      0      0      0      0
+    sdf                         -      -      0      0      0      0
+    sdg                         -      -      0      0      0      0
+    sdh                         -      -      0      0      0      0
+logs                            -      -      -      -      -      -
+  nvme0n1p2                  128K  31.5G      0  2.13K      0  13.6M
+--------------------------  -----  -----  -----  -----  -----  -----

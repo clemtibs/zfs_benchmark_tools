@@ -1,0 +1,915 @@
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.6G  55.0T      0     53  15.5K  33.5M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0     51  13.2K  33.5M
+    sdd                        -      -      0     10  2.64K  6.70M
+    sde                        -      -      0     10  2.64K  6.70M
+    sdf                        -      -      0     10  2.64K  6.70M
+    sdg                        -      -      0     10  2.64K  6.70M
+    sdh                        -      -      0     10  2.64K  6.70M
+special                        -      -      -      -      -      -
+  mirror-1                 3.35M   464G      0      1  2.37K  15.5K
+    sdb                        -      -      0      0  1.18K  7.74K
+    sdc                        -      -      0      0  1.18K  7.74K
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.6G  55.0T      0  1.17K      0  20.8M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0     19      0  79.8K
+    sdd                        -      -      0      3      0  16.0K
+    sde                        -      -      0      3      0  16.0K
+    sdf                        -      -      0      3      0  16.0K
+    sdg                        -      -      0      3      0  16.0K
+    sdh                        -      -      0      3      0  16.0K
+special                        -      -      -      -      -      -
+  mirror-1                 3.35M   464G      0  1.15K      0  20.8M
+    sdb                        -      -      0    592      0  10.4M
+    sdc                        -      -      0    587      0  10.4M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.6G  55.0T      0      0      0      0
+  draid2:3d:5c:0s-0        52.6G  54.5T      0      0      0      0
+    sdd                        -      -      0      0      0      0
+    sde                        -      -      0      0      0      0
+    sdf                        -      -      0      0      0      0
+    sdg                        -      -      0      0      0      0
+    sdh                        -      -      0      0      0      0
+special                        -      -      -      -      -      -
+  mirror-1                 3.35M   464G      0      0      0      0
+    sdb                        -      -      0      0      0      0
+    sdc                        -      -      0      0      0      0
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.7G  55.0T      0  9.32K      0   132M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0     19      0  77.8K
+    sdd                        -      -      0      3      0  15.6K
+    sde                        -      -      0      3      0  15.6K
+    sdf                        -      -      0      3      0  15.6K
+    sdg                        -      -      0      3      0  15.6K
+    sdh                        -      -      0      3      0  15.6K
+special                        -      -      -      -      -      -
+  mirror-1                 64.9M   464G      0  9.41K      0   134M
+    sdb                        -      -      0  4.71K      0  66.9M
+    sdc                        -      -      0  4.71K      0  66.9M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.8G  55.0T      0  11.4K      0   192M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0     38      0   156K
+    sdd                        -      -      0      7      0  31.2K
+    sde                        -      -      0      7      0  30.4K
+    sdf                        -      -      0      7      0  30.4K
+    sdg                        -      -      0      7      0  30.4K
+    sdh                        -      -      0      7      0  30.4K
+special                        -      -      -      -      -      -
+  mirror-1                  142M   464G      0  11.4K      0   194M
+    sdb                        -      -      0  5.68K      0  97.1M
+    sdc                        -      -      0  5.68K      0  97.1M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.8G  55.0T      0  11.8K      0   276M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    108      0   435K
+    sdd                        -      -      0     21      0  87.1K
+    sde                        -      -      0     22      0  89.1K
+    sdf                        -      -      0     22      0  89.1K
+    sdg                        -      -      0     22      0  89.1K
+    sdh                        -      -      0     22      0  88.8K
+special                        -      -      -      -      -      -
+  mirror-1                  176M   464G      0  11.6K      0   276M
+    sdb                        -      -      0  5.80K      0   138M
+    sdc                        -      -      0  5.79K      0   138M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.8G  55.0T      0  8.53K      0   270M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    138      0   556K
+    sdd                        -      -      0     27      0   111K
+    sde                        -      -      0     27      0   111K
+    sdf                        -      -      0     27      0   111K
+    sdg                        -      -      0     27      0   111K
+    sdh                        -      -      0     27      0   111K
+special                        -      -      -      -      -      -
+  mirror-1                  208M   464G      0  8.40K      0   270M
+    sdb                        -      -      0  4.22K      0   135M
+    sdc                        -      -      0  4.19K      0   135M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.9G  55.0T      0  8.79K      0   320M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    136      0   729K
+    sdd                        -      -      0     27      0   146K
+    sde                        -      -      0     27      0   146K
+    sdf                        -      -      0     27      0   146K
+    sdg                        -      -      0     27      0   146K
+    sdh                        -      -      0     27      0   146K
+special                        -      -      -      -      -      -
+  mirror-1                  239M   464G      0  8.61K      0   318M
+    sdb                        -      -      0  4.32K      0   159M
+    sdc                        -      -      0  4.28K      0   159M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.9G  55.0T      0  7.37K      0   338M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    151      0   921K
+    sdd                        -      -      0     30      0   184K
+    sde                        -      -      0     30      0   184K
+    sdf                        -      -      0     30      0   184K
+    sdg                        -      -      0     30      0   184K
+    sdh                        -      -      0     30      0   184K
+special                        -      -      -      -      -      -
+  mirror-1                  268M   464G      0  7.23K      0   338M
+    sdb                        -      -      0  3.61K      0   169M
+    sdc                        -      -      0  3.62K      0   169M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.9G  55.0T      0  7.41K      0   363M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    164      0  1.54M
+    sdd                        -      -      0     32      0   314K
+    sde                        -      -      0     32      0   314K
+    sdf                        -      -      0     32      0   314K
+    sdg                        -      -      0     32      0   313K
+    sdh                        -      -      0     32      0   313K
+special                        -      -      -      -      -      -
+  mirror-1                  296M   464G      0  7.27K      0   362M
+    sdb                        -      -      0  3.64K      0   181M
+    sdc                        -      -      0  3.64K      0   181M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  52.9G  55.0T      0  6.51K      0   402M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    301      0  4.42M
+    sdd                        -      -      0     59      0   909K
+    sde                        -      -      0     59      0   909K
+    sdf                        -      -      0     59      0   909K
+    sdg                        -      -      0     60      0   911K
+    sdh                        -      -      0     60      0   911K
+special                        -      -      -      -      -      -
+  mirror-1                  321M   464G      0  6.26K      0   403M
+    sdb                        -      -      0  3.13K      0   202M
+    sdc                        -      -      0  3.12K      0   202M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.0G  55.0T      0  6.93K      0   404M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    455      0  8.24M
+    sdd                        -      -      0     92      0  1.66M
+    sde                        -      -      0     92      0  1.66M
+    sdf                        -      -      0     92      0  1.66M
+    sdg                        -      -      0     92      0  1.66M
+    sdh                        -      -      0     92      0  1.66M
+special                        -      -      -      -      -      -
+  mirror-1                  348M   464G      0  6.41K      0   389M
+    sdb                        -      -      0  3.19K      0   194M
+    sdc                        -      -      0  3.21K      0   194M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.0G  55.0T      0  8.89K      0   432M
+  draid2:3d:5c:0s-0        52.6G  54.5T      0    917      0  20.1M
+    sdd                        -      -      0    184      0  4.02M
+    sde                        -      -      0    184      0  4.02M
+    sdf                        -      -      0    184      0  4.02M
+    sdg                        -      -      0    184      0  4.02M
+    sdh                        -      -      0    184      0  4.02M
+special                        -      -      -      -      -      -
+  mirror-1                  372M   464G      0  7.99K      0   412M
+    sdb                        -      -      0  4.00K      0   206M
+    sdc                        -      -      0  3.99K      0   206M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.1G  55.0T      0  8.96K      0   447M
+  draid2:3d:5c:0s-0        52.7G  54.5T      0  1.46K      0  35.6M
+    sdd                        -      -      0    297      0  7.12M
+    sde                        -      -      0    298      0  7.11M
+    sdf                        -      -      0    298      0  7.11M
+    sdg                        -      -      0    298      0  7.11M
+    sdh                        -      -      0    298      0  7.11M
+special                        -      -      -      -      -      -
+  mirror-1                  402M   464G      0  7.51K      0   412M
+    sdb                        -      -      0  3.76K      0   206M
+    sdc                        -      -      0  3.75K      0   206M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.1G  55.0T      0  9.88K      0   494M
+  draid2:3d:5c:0s-0        52.7G  54.5T      0  2.11K      0  52.0M
+    sdd                        -      -      0    431      0  10.4M
+    sde                        -      -      0    432      0  10.4M
+    sdf                        -      -      0    432      0  10.4M
+    sdg                        -      -      0    432      0  10.4M
+    sdh                        -      -      0    433      0  10.4M
+special                        -      -      -      -      -      -
+  mirror-1                  394M   464G      0  7.78K      0   442M
+    sdb                        -      -      0  3.90K      0   221M
+    sdc                        -      -      0  3.88K      0   221M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.1G  55.0T      0  10.3K      0   493M
+  draid2:3d:5c:0s-0        52.7G  54.5T      0  3.23K      0  82.1M
+    sdd                        -      -      0    664      0  16.4M
+    sde                        -      -      0    661      0  16.4M
+    sdf                        -      -      0    664      0  16.4M
+    sdg                        -      -      0    659      0  16.4M
+    sdh                        -      -      0    662      0  16.4M
+special                        -      -      -      -      -      -
+  mirror-1                  415M   464G      0  7.05K      0   411M
+    sdb                        -      -      0  3.54K      0   206M
+    sdc                        -      -      0  3.51K      0   206M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.2G  55.0T      0  10.8K      0   516M
+  draid2:3d:5c:0s-0        52.8G  54.5T      0  4.39K      0   118M
+    sdd                        -      -      0    876      0  23.7M
+    sde                        -      -      0    912      0  23.7M
+    sdf                        -      -      0    880      0  23.7M
+    sdg                        -      -      0    917      0  23.7M
+    sdh                        -      -      0    907      0  23.7M
+special                        -      -      -      -      -      -
+  mirror-1                  396M   464G      0  6.39K      0   397M
+    sdb                        -      -      0  3.20K      0   199M
+    sdc                        -      -      0  3.19K      0   199M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.2G  55.0T      0  11.1K      0   457M
+  draid2:3d:5c:0s-0        52.8G  54.5T      0  4.02K      0   104M
+    sdd                        -      -      0    826      0  20.8M
+    sde                        -      -      0    826      0  20.8M
+    sdf                        -      -      0    816      0  20.8M
+    sdg                        -      -      0    826      0  20.8M
+    sdh                        -      -      0    828      0  20.8M
+special                        -      -      -      -      -      -
+  mirror-1                  426M   464G      0  7.12K      0   358M
+    sdb                        -      -      0  3.57K      0   179M
+    sdc                        -      -      0  3.55K      0   179M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.3G  55.0T      0  11.7K      0   501M
+  draid2:3d:5c:0s-0        52.9G  54.5T      0  5.25K      0   148M
+    sdd                        -      -      0  1.06K      0  30.3M
+    sde                        -      -      0  1.11K      0  30.3M
+    sdf                        -      -      0    986      0  30.3M
+    sdg                        -      -      0   1015      0  27.1M
+    sdh                        -      -      0  1.11K      0  30.3M
+special                        -      -      -      -      -      -
+  mirror-1                  449M   464G      0  6.47K      0   346M
+    sdb                        -      -      0  3.24K      0   173M
+    sdc                        -      -      0  3.23K      0   173M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.3G  55.0T      0  10.1K      0   395M
+  draid2:3d:5c:0s-0        52.9G  54.5T      0  5.16K      0   147M
+    sdd                        -      -      0  1.05K      0  28.7M
+    sde                        -      -      0  1.05K      0  28.7M
+    sdf                        -      -      0  1.04K      0  28.7M
+    sdg                        -      -      0    995      0  32.1M
+    sdh                        -      -      0  1.05K      0  28.7M
+special                        -      -      -      -      -      -
+  mirror-1                  394M   464G      0  4.95K      0   248M
+    sdb                        -      -      0  2.48K      0   124M
+    sdc                        -      -      0  2.47K      0   124M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.3G  55.0T      0  10.5K      0   432M
+  draid2:3d:5c:0s-0        53.0G  54.5T      0  5.57K      0   177M
+    sdd                        -      -      0  1.07K      0  35.4M
+    sde                        -      -      0  1.06K      0  35.4M
+    sdf                        -      -      0  1.19K      0  35.5M
+    sdg                        -      -      0  1.21K      0  35.5M
+    sdh                        -      -      0  1.05K      0  35.5M
+special                        -      -      -      -      -      -
+  mirror-1                  363M   464G      0  4.97K      0   256M
+    sdb                        -      -      0  2.49K      0   128M
+    sdc                        -      -      0  2.48K      0   128M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.4G  55.0T      0  9.92K      0   375M
+  draid2:3d:5c:0s-0        53.1G  54.5T      0  6.08K      0   179M
+    sdd                        -      -      0  1.24K      0  35.8M
+    sde                        -      -      0  1.15K      0  35.8M
+    sdf                        -      -      0  1.23K      0  35.8M
+    sdg                        -      -      0  1.18K      0  35.8M
+    sdh                        -      -      0  1.26K      0  35.8M
+special                        -      -      -      -      -      -
+  mirror-1                  373M   464G      0  3.81K      0   195M
+    sdb                        -      -      0  1.91K      0  97.3M
+    sdc                        -      -      0  1.90K      0  97.3M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.4G  55.0T      0  10.4K      0   402M
+  draid2:3d:5c:0s-0        53.1G  54.5T      0  6.51K      0   209M
+    sdd                        -      -      0  1.17K      0  41.9M
+    sde                        -      -      0  1.18K      0  41.9M
+    sdf                        -      -      0  1.31K      0  41.9M
+    sdg                        -      -      0  1.36K      0  41.9M
+    sdh                        -      -      0  1.49K      0  41.9M
+special                        -      -      -      -      -      -
+  mirror-1                  320M   464G      0  3.85K      0   193M
+    sdb                        -      -      0  1.93K      0  96.6M
+    sdc                        -      -      0  1.92K      0  96.6M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.6G  55.0T      0  10.4K      0   438M
+  draid2:3d:5c:0s-0        53.3G  54.5T      0  6.91K      0   248M
+    sdd                        -      -      0  1.57K      0  51.8M
+    sde                        -      -      0  1.45K      0  51.8M
+    sdf                        -      -      0  1.33K      0  49.1M
+    sdg                        -      -      0  1.19K      0  49.2M
+    sdh                        -      -      0  1.50K      0  51.7M
+special                        -      -      -      -      -      -
+  mirror-1                  348M   464G      0  3.58K      0   192M
+    sdb                        -      -      0  1.79K      0  96.3M
+    sdc                        -      -      0  1.79K      0  96.3M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.6G  55.0T      0  10.2K      0   447M
+  draid2:3d:5c:0s-0        53.3G  54.5T      0  6.81K      0   279M
+    sdd                        -      -      0  1.77K      0  53.9M
+    sde                        -      -      0  1.51K      0  53.9M
+    sdf                        -      -      0  1.09K      0  57.0M
+    sdg                        -      -      0    908      0  56.9M
+    sdh                        -      -      0  1.39K      0  52.2M
+special                        -      -      -      -      -      -
+  mirror-1                  309M   464G      0  3.30K      0   164M
+    sdb                        -      -      0  1.65K      0  81.9M
+    sdc                        -      -      0  1.65K      0  81.9M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.6G  55.0T      0  8.16K      0   418M
+  draid2:3d:5c:0s-0        53.3G  54.5T      0  5.40K      0   275M
+    sdd                        -      -      0  1.12K      0  55.7M
+    sde                        -      -      0  1.32K      0  55.7M
+    sdf                        -      -      0  1.05K      0  54.3M
+    sdg                        -      -      0  1.06K      0  54.0M
+    sdh                        -      -      0    853      0  55.6M
+special                        -      -      -      -      -      -
+  mirror-1                  259M   464G      0  2.78K      0   144M
+    sdb                        -      -      0  1.39K      0  71.9M
+    sdc                        -      -      0  1.39K      0  72.0M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.8G  55.0T      0  6.72K      0   414M
+  draid2:3d:5c:0s-0        53.5G  54.5T      0  4.50K      0   292M
+    sdd                        -      -      0  1.20K      0  57.7M
+    sde                        -      -      0   1005      0  57.6M
+    sdf                        -      -      0    825      0  60.4M
+    sdg                        -      -      0    519      0  55.8M
+    sdh                        -      -      0  1.01K      0  60.3M
+special                        -      -      -      -      -      -
+  mirror-1                  280M   464G      0  2.19K      0   121M
+    sdb                        -      -      0  1.10K      0  60.4M
+    sdc                        -      -      0  1.10K      0  60.3M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.9G  55.0T      0  6.30K      0   427M
+  draid2:3d:5c:0s-0        53.6G  54.5T      0  4.29K      0   320M
+    sdd                        -      -      0  1.18K      0  63.6M
+    sde                        -      -      0    672      0  63.7M
+    sdf                        -      -      0  1.03K      0  62.4M
+    sdg                        -      -      0    696      0  67.1M
+    sdh                        -      -      0    761      0  63.0M
+special                        -      -      -      -      -      -
+  mirror-1                  257M   464G      0  2.01K      0   107M
+    sdb                        -      -      0  1.00K      0  53.5M
+    sdc                        -      -      0  1.00K      0  53.5M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.0G  55.0T      0  6.24K      0   556M
+  draid2:3d:5c:0s-0        53.7G  54.5T      0  4.01K      0   430M
+    sdd                        -      -      0    963      0  85.7M
+    sde                        -      -      0    790      0  85.8M
+    sdf                        -      -      0    855      0  87.5M
+    sdg                        -      -      0    790      0  87.7M
+    sdh                        -      -      0    703      0  83.5M
+special                        -      -      -      -      -      -
+  mirror-1                  253M   464G      0  2.23K      0   126M
+    sdb                        -      -      0  1.12K      0  63.1M
+    sdc                        -      -      0  1.11K      0  63.1M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  53.9G  55.0T      0  5.59K      0   400M
+  draid2:3d:5c:0s-0        53.7G  54.5T      0  4.11K      0   324M
+    sdd                        -      -      0  1.07K      0  64.5M
+    sde                        -      -      0    895      0  65.1M
+    sdf                        -      -      0    802      0  64.1M
+    sdg                        -      -      0    617      0  61.4M
+    sdh                        -      -      0    794      0  68.8M
+special                        -      -      -      -      -      -
+  mirror-1                  211M   464G      0  1.48K      0  75.8M
+    sdb                        -      -      0    759      0  37.9M
+    sdc                        -      -      0    755      0  37.9M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.1G  55.0T      0  5.78K      0   471M
+  draid2:3d:5c:0s-0        53.9G  54.5T      0  4.22K      0   398M
+    sdd                        -      -      0    773      0  80.6M
+    sde                        -      -      0    909      0  80.4M
+    sdf                        -      -      0    831      0  79.4M
+    sdg                        -      -      0    848      0  80.2M
+    sdh                        -      -      0    968      0  79.0M
+special                        -      -      -      -      -      -
+  mirror-1                  192M   464G      0  1.56K      0  73.2M
+    sdb                        -      -      0    801      0  36.7M
+    sdc                        -      -      0    802      0  36.8M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.2G  55.0T      0  4.45K      0   518M
+  draid2:3d:5c:0s-0        54.1G  54.5T      0  3.13K      0   449M
+    sdd                        -      -      0    638      0  89.8M
+    sde                        -      -      0    859      0  89.1M
+    sdf                        -      -      0    714      0  89.4M
+    sdg                        -      -      0    477      0  90.3M
+    sdh                        -      -      0    512      0  89.2M
+special                        -      -      -      -      -      -
+  mirror-1                  185M   464G      0  1.32K      0  69.3M
+    sdb                        -      -      0    677      0  34.5M
+    sdc                        -      -      0    674      0  34.5M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.3G  55.0T      0  4.81K      0   452M
+  draid2:3d:5c:0s-0        54.1G  54.5T      0  3.79K      0   407M
+    sdd                        -      -      0    776      0  81.0M
+    sde                        -      -      0    771      0  81.3M
+    sdf                        -      -      0    780      0  81.3M
+    sdg                        -      -      0    692      0  82.0M
+    sdh                        -      -      0    862      0  81.3M
+special                        -      -      -      -      -      -
+  mirror-1                  164M   464G      0  1.04K      0  43.6M
+    sdb                        -      -      0    530      0  21.8M
+    sdc                        -      -      0    530      0  21.8M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.4G  55.0T      0  5.14K      0   516M
+  draid2:3d:5c:0s-0        54.3G  54.5T      0  4.15K      0   468M
+    sdd                        -      -      0    762      0  94.8M
+    sde                        -      -      0    804      0  94.1M
+    sdf                        -      -      0    925      0  94.0M
+    sdg                        -      -      0    914      0  91.3M
+    sdh                        -      -      0    819      0  93.9M
+special                        -      -      -      -      -      -
+  mirror-1                  139M   464G      0    973      0  47.9M
+    sdb                        -      -      0    487      0  23.9M
+    sdc                        -      -      0    486      0  23.9M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.5G  55.0T      0  4.10K      0   506M
+  draid2:3d:5c:0s-0        54.4G  54.5T      0  3.24K      0   465M
+    sdd                        -      -      0    640      0  93.5M
+    sde                        -      -      0    594      0  90.2M
+    sdf                        -      -      0    723      0  94.2M
+    sdg                        -      -      0    704      0  97.1M
+    sdh                        -      -      0    675      0  90.0M
+special                        -      -      -      -      -      -
+  mirror-1                  127M   464G      0    871      0  39.3M
+    sdb                        -      -      0    435      0  19.6M
+    sdc                        -      -      0    435      0  19.6M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.6G  55.0T      0  3.59K      0   499M
+  draid2:3d:5c:0s-0        54.5G  54.5T      0  2.97K      0   472M
+    sdd                        -      -      0    663      0  91.7M
+    sde                        -      -      0    497      0  96.1M
+    sdf                        -      -      0    591      0  93.5M
+    sdg                        -      -      0    568      0  93.7M
+    sdh                        -      -      0    734      0  97.9M
+special                        -      -      -      -      -      -
+  mirror-1                  110M   464G      0    639      0  28.0M
+    sdb                        -      -      0    319      0  14.0M
+    sdc                        -      -      0    319      0  14.0M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.7G  55.0T      0  3.21K      0   515M
+  draid2:3d:5c:0s-0        54.6G  54.5T      0  2.65K      0   491M
+    sdd                        -      -      0    706      0   102M
+    sde                        -      -      0    556      0  97.7M
+    sdf                        -      -      0    500      0  96.5M
+    sdg                        -      -      0    394      0  96.3M
+    sdh                        -      -      0    550      0  98.4M
+special                        -      -      -      -      -      -
+  mirror-1                 96.5M   464G      0    567      0  24.5M
+    sdb                        -      -      0    283      0  12.3M
+    sdc                        -      -      0    283      0  12.3M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.8G  55.0T      0  2.93K      0   527M
+  draid2:3d:5c:0s-0        54.7G  54.5T      0  2.50K      0   509M
+    sdd                        -      -      0    621      0  98.5M
+    sde                        -      -      0    438      0   104M
+    sdf                        -      -      0    638      0   105M
+    sdg                        -      -      0    351      0   102M
+    sdh                        -      -      0    506      0  99.1M
+special                        -      -      -      -      -      -
+  mirror-1                 81.4M   464G      0    449      0  17.2M
+    sdb                        -      -      0    224      0  8.58M
+    sdc                        -      -      0    224      0  8.58M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.8G  55.0T      0  3.23K      0   547M
+  draid2:3d:5c:0s-0        54.7G  54.5T      0  2.80K      0   530M
+    sdd                        -      -      0    585      0   105M
+    sde                        -      -      0    664      0   106M
+    sdf                        -      -      0    526      0   104M
+    sdg                        -      -      0    568      0   106M
+    sdh                        -      -      0    522      0   109M
+special                        -      -      -      -      -      -
+  mirror-1                 68.7M   464G      0    441      0  16.6M
+    sdb                        -      -      0    220      0  8.30M
+    sdc                        -      -      0    220      0  8.30M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.8G  55.0T      0  3.13K      0   503M
+  draid2:3d:5c:0s-0        54.8G  54.5T      0  2.77K      0   490M
+    sdd                        -      -      0    521      0  99.7M
+    sde                        -      -      0    505      0  96.6M
+    sdf                        -      -      0    677      0  98.9M
+    sdg                        -      -      0    455      0  96.7M
+    sdh                        -      -      0    671      0  98.0M
+special                        -      -      -      -      -      -
+  mirror-1                 58.0M   464G      0    374      0  13.2M
+    sdb                        -      -      0    186      0  6.62M
+    sdc                        -      -      0    187      0  6.62M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  54.9G  55.0T      0  3.63K      0   500M
+  draid2:3d:5c:0s-0        54.9G  54.5T      0  3.31K      0   490M
+    sdd                        -      -      0    752      0  96.4M
+    sde                        -      -      0    797      0  98.2M
+    sdf                        -      -      0    567      0  98.2M
+    sdg                        -      -      0    581      0  98.6M
+    sdh                        -      -      0    689      0  98.4M
+special                        -      -      -      -      -      -
+  mirror-1                 50.0M   464G      0    330      0  10.4M
+    sdb                        -      -      0    165      0  5.18M
+    sdc                        -      -      0    164      0  5.18M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.0G  55.0T      0  3.25K      0   523M
+  draid2:3d:5c:0s-0        54.9G  54.5T      0  2.95K      0   514M
+    sdd                        -      -      0    612      0   106M
+    sde                        -      -      0    533      0   102M
+    sdf                        -      -      0    746      0   102M
+    sdg                        -      -      0    527      0   104M
+    sdh                        -      -      0    599      0   101M
+special                        -      -      -      -      -      -
+  mirror-1                 42.2M   464G      0    314      0  9.02M
+    sdb                        -      -      0    157      0  4.51M
+    sdc                        -      -      0    157      0  4.51M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.0G  55.0T      0  2.10K      0   455M
+  draid2:3d:5c:0s-0        55.0G  54.5T      0  1.85K      0   448M
+    sdd                        -      -      0    354      0  89.2M
+    sde                        -      -      0    339      0  91.9M
+    sdf                        -      -      0    308      0  91.4M
+    sdg                        -      -      0    408      0  87.4M
+    sdh                        -      -      0    483      0  89.6M
+special                        -      -      -      -      -      -
+  mirror-1                 34.9M   464G      0    256      0  6.18M
+    sdb                        -      -      0    128      0  3.09M
+    sdc                        -      -      0    128      0  3.09M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.1G  55.0T      0  2.44K      0   490M
+  draid2:3d:5c:0s-0        55.0G  54.5T      0  2.20K      0   483M
+    sdd                        -      -      0    394      0  94.8M
+    sde                        -      -      0    413      0  94.1M
+    sdf                        -      -      0    517      0  94.3M
+    sdg                        -      -      0    417      0   100M
+    sdh                        -      -      0    508      0  98.9M
+special                        -      -      -      -      -      -
+  mirror-1                 28.9M   464G      0    248      0  6.41M
+    sdb                        -      -      0    124      0  3.20M
+    sdc                        -      -      0    124      0  3.20M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.1G  55.0T      0  2.80K      0   569M
+  draid2:3d:5c:0s-0        55.1G  54.5T      0  2.58K      0   564M
+    sdd                        -      -      0    527      0   113M
+    sde                        -      -      0    512      0   114M
+    sdf                        -      -      0    611      0   112M
+    sdg                        -      -      0    513      0   112M
+    sdh                        -      -      0    474      0   112M
+special                        -      -      -      -      -      -
+  mirror-1                 25.1M   464G      0    229      0  5.07M
+    sdb                        -      -      0    115      0  2.53M
+    sdc                        -      -      0    114      0  2.53M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.2G  55.0T      0  2.99K      0   505M
+  draid2:3d:5c:0s-0        55.1G  54.5T      0  2.76K      0   500M
+    sdd                        -      -      0    485      0   100M
+    sde                        -      -      0    628      0  98.7M
+    sdf                        -      -      0    486      0   101M
+    sdg                        -      -      0    664      0   100M
+    sdh                        -      -      0    563      0   100M
+special                        -      -      -      -      -      -
+  mirror-1                 21.9M   464G      0    233      0  4.97M
+    sdb                        -      -      0    116      0  2.48M
+    sdc                        -      -      0    116      0  2.48M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.2G  55.0T      0  1.87K      0   524M
+  draid2:3d:5c:0s-0        55.2G  54.5T      0  1.64K      0   520M
+    sdd                        -      -      0    323      0   104M
+    sde                        -      -      0    410      0   102M
+    sdf                        -      -      0    297      0   105M
+    sdg                        -      -      0    346      0   104M
+    sdh                        -      -      0    298      0   105M
+special                        -      -      -      -      -      -
+  mirror-1                 18.8M   464G      0    232      0  4.62M
+    sdb                        -      -      0    116      0  2.31M
+    sdc                        -      -      0    115      0  2.31M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.2G  55.0T      0  2.38K      0   544M
+  draid2:3d:5c:0s-0        55.2G  54.5T      0  2.34K      0   542M
+    sdd                        -      -      0    396      0   107M
+    sde                        -      -      0    592      0   112M
+    sdf                        -      -      0    455      0   106M
+    sdg                        -      -      0    482      0   109M
+    sdh                        -      -      0    472      0   108M
+special                        -      -      -      -      -      -
+  mirror-1                 18.8M   464G      0     51      0  2.21M
+    sdb                        -      -      0     25      0  1.10M
+    sdc                        -      -      0     25      0  1.11M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.2G  55.0T      0  1.98K      0   494M
+  draid2:3d:5c:0s-0        55.2G  54.5T      0  1.79K      0   490M
+    sdd                        -      -      0    387      0   104M
+    sde                        -      -      0    392      0  97.0M
+    sdf                        -      -      0    341      0  96.2M
+    sdg                        -      -      0    343      0  93.6M
+    sdh                        -      -      0    364      0  99.5M
+special                        -      -      -      -      -      -
+  mirror-1                 15.8M   464G      0    186      0  3.56M
+    sdb                        -      -      0     92      0  1.78M
+    sdc                        -      -      0     93      0  1.78M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.3G  55.0T      0  2.46K      0   512M
+  draid2:3d:5c:0s-0        55.3G  54.5T      0  2.27K      0   510M
+    sdd                        -      -      0    376      0   100M
+    sde                        -      -      0    372      0   101M
+    sdf                        -      -      0    535      0   106M
+    sdg                        -      -      0    439      0   105M
+    sdh                        -      -      0    600      0  97.6M
+special                        -      -      -      -      -      -
+  mirror-1                 14.0M   464G      0    199      0  2.79M
+    sdb                        -      -      0    100      0  1.40M
+    sdc                        -      -      0     98      0  1.40M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.3G  55.0T      0  2.23K      0   447M
+  draid2:3d:5c:0s-0        55.3G  54.5T      0  2.05K      0   445M
+    sdd                        -      -      0    343      0  84.8M
+    sde                        -      -      0    470      0  90.4M
+    sdf                        -      -      0    367      0  89.7M
+    sdg                        -      -      0    457      0  89.0M
+    sdh                        -      -      0    457      0  90.7M
+special                        -      -      -      -      -      -
+  mirror-1                 12.6M   464G      0    186      0  2.43M
+    sdb                        -      -      0     93      0  1.21M
+    sdc                        -      -      0     92      0  1.21M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.4G  55.0T      0  1.80K      0   484M
+  draid2:3d:5c:0s-0        55.4G  54.5T      0  1.61K      0   481M
+    sdd                        -      -      0    272      0  96.9M
+    sde                        -      -      0    378      0  97.2M
+    sdf                        -      -      0    317      0  94.9M
+    sdg                        -      -      0    356      0  98.5M
+    sdh                        -      -      0    322      0  93.7M
+special                        -      -      -      -      -      -
+  mirror-1                 11.3M   464G      0    195      0  2.80M
+    sdb                        -      -      0     97      0  1.40M
+    sdc                        -      -      0     97      0  1.40M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.4G  55.0T      0  1.49K      0   516M
+  draid2:3d:5c:0s-0        55.4G  54.5T      0  1.45K      0   515M
+    sdd                        -      -      0    310      0   107M
+    sde                        -      -      0    297      0   103M
+    sdf                        -      -      0    322      0   106M
+    sdg                        -      -      0    231      0  92.3M
+    sdh                        -      -      0    323      0   107M
+special                        -      -      -      -      -      -
+  mirror-1                 11.3M   464G      0     41      0  1.83M
+    sdb                        -      -      0     20      0   939K
+    sdc                        -      -      0     20      0   939K
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.4G  55.0T      0  1.99K      0   417M
+  draid2:3d:5c:0s-0        55.4G  54.5T      0  1.82K      0   414M
+    sdd                        -      -      0    364      0  81.0M
+    sde                        -      -      0    453      0  83.0M
+    sdf                        -      -      0    407      0  80.7M
+    sdg                        -      -      0    265      0  88.7M
+    sdh                        -      -      0    369      0  80.7M
+special                        -      -      -      -      -      -
+  mirror-1                 10.9M   464G      0    176      0  1.98M
+    sdb                        -      -      0     87      0  1013K
+    sdc                        -      -      0     88      0  1013K
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.5G  55.0T      0  2.60K      0   502M
+  draid2:3d:5c:0s-0        55.5G  54.5T      0  2.41K      0   499M
+    sdd                        -      -      0    530      0  94.8M
+    sde                        -      -      0    543      0  98.0M
+    sdf                        -      -      0    469      0  98.2M
+    sdg                        -      -      0    424      0   104M
+    sdh                        -      -      0    493      0   103M
+special                        -      -      -      -      -      -
+  mirror-1                 10.5M   464G      0    192      0  2.67M
+    sdb                        -      -      0     96      0  1.34M
+    sdc                        -      -      0     96      0  1.34M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.5G  55.0T      0  1.99K      0   519M
+  draid2:3d:5c:0s-0        55.5G  54.5T      0  1.82K      0   516M
+    sdd                        -      -      0    455      0   108M
+    sde                        -      -      0    337      0   103M
+    sdf                        -      -      0    427      0   105M
+    sdg                        -      -      0    237      0   101M
+    sdh                        -      -      0    405      0   100M
+special                        -      -      -      -      -      -
+  mirror-1                 10.5M   464G      0    181      0  2.67M
+    sdb                        -      -      0     90      0  1.33M
+    sdc                        -      -      0     90      0  1.33M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.5G  55.0T      0  2.01K      0   461M
+  draid2:3d:5c:0s-0        55.5G  54.5T      0  1.98K      0   460M
+    sdd                        -      -      0    417      0  91.5M
+    sde                        -      -      0    402      0  94.0M
+    sdf                        -      -      0    371      0  94.0M
+    sdg                        -      -      0    310      0  86.6M
+    sdh                        -      -      0    533      0  94.4M
+special                        -      -      -      -      -      -
+  mirror-1                 9.92M   464G      0     25      0   790K
+    sdb                        -      -      0     12      0   395K
+    sdc                        -      -      0     12      0   395K
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.6G  55.0T      0  2.24K      0   457M
+  draid2:3d:5c:0s-0        55.6G  54.5T      0  2.07K      0   455M
+    sdd                        -      -      0    453      0  91.5M
+    sde                        -      -      0    449      0  90.3M
+    sdf                        -      -      0    514      0  90.6M
+    sdg                        -      -      0    310      0  96.9M
+    sdh                        -      -      0    388      0  85.2M
+special                        -      -      -      -      -      -
+  mirror-1                 9.66M   464G      0    180      0  2.16M
+    sdb                        -      -      0     89      0  1.08M
+    sdc                        -      -      0     90      0  1.08M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.6G  55.0T      0  2.27K      0   497M
+  draid2:3d:5c:0s-0        55.6G  54.5T      0  2.10K      0   495M
+    sdd                        -      -      0    430      0   100M
+    sde                        -      -      0    396      0  96.6M
+    sdf                        -      -      0    499      0  99.1M
+    sdg                        -      -      0    459      0  94.9M
+    sdh                        -      -      0    363      0   104M
+special                        -      -      -      -      -      -
+  mirror-1                 9.32M   464G      0    173      0  2.41M
+    sdb                        -      -      0     87      0  1.21M
+    sdc                        -      -      0     86      0  1.21M
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.6G  55.0T      0  1.64K      0   542M
+  draid2:3d:5c:0s-0        55.6G  54.5T      0  1.60K      0   541M
+    sdd                        -      -      0    384      0   106M
+    sde                        -      -      0    301      0   110M
+    sdf                        -      -      0    364      0   107M
+    sdg                        -      -      0    256      0   112M
+    sdh                        -      -      0    330      0   105M
+special                        -      -      -      -      -      -
+  mirror-1                 9.32M   464G      0     41      0  1.58M
+    sdb                        -      -      0     20      0   808K
+    sdc                        -      -      0     20      0   808K
+-------------------------  -----  -----  -----  -----  -----  -----
+                             capacity     operations     bandwidth 
+pool                       alloc   free   read  write   read  write
+-------------------------  -----  -----  -----  -----  -----  -----
+tank_draid_special_noslog  55.7G  55.0T      0  2.73K      0   369M
+  draid2:3d:5c:0s-0        55.7G  54.5T      0  2.57K      0   368M
+    sdd                        -      -      0    525      0  72.3M
+    sde                        -      -      0    502      0  69.1M
+    sdf                        -      -      0    545      0  75.5M
+    sdg                        -      -      0    535      0  73.0M
+    sdh                        -      -      0    525      0  77.8M
+special                        -      -      -      -      -      -
+  mirror-1                 9.03M   464G      0    159      0  1.05M
+    sdb                        -      -      0     79      0   539K
+    sdc                        -      -      0     79      0   539K
+-------------------------  -----  -----  -----  -----  -----  -----
