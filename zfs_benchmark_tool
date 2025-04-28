@@ -1,0 +1,937 @@
+#!/bin/bash
+##----------------
+export _script_name=$(basename -a "$0")
+export _script_short_desc="
+Semi-hardcoded helper script for making setup/teardown of zfs pools easier for
+benchmark testing various topologies."
+export _script_mod_date='2025.04.28-09:35'
+export _script_version='1.0.0'
+export _script_requirements='zfsutils-linux, fio, arcstat, smartmontools, nvme-cli' 
+export _script_bash_debug=false 
+##----------------
+shopt -s extglob ## Needed for arg parsing
+
+## Internal config
+export _script_subcommands_args=()
+export _script_min_args=1
+export _script_max_args=3
+export _script_subcommand_action=''
+
+## Script Config
+export working_dir=${working_dir:-"$PWD"}
+export hd_pool_devs=("sdd" "sde" "sdf" "sdg" "sdh")
+export sd_special_devs=("sdb" "sdc")
+export sd_log_dev='nvme0n1p2'
+export sd_cache_dev='nvme0n1p3'
+export zpool_name='tank'
+export zpool_options='ashift=12'
+export zpool_mountpoint='/mnt/localhost/zpools'
+export test_data_dir=''
+export device_to_add=''
+export pool_type=''
+export pool_test_layout=''
+export raidz_layout='raidz2'
+export draid_layout='draid2:3d:5c:0s'
+export log_dir="$working_dir/zfs_benchmark_logs"
+export test_log_dir=''
+# ----------------------------------------------------------------------------------------------
+
+# ----------- FIO Test Functions -----------
+# Notes:
+#
+# For the use of asynchronous accesses (eg via the library libaio) "-direct"
+# is a prerequisite because the page cache can not be addressed
+# asynchronously. Without "-direct"  the speed of the main memory is measured
+#
+# "refill_buffers"  prevents write compression on SDDs with random writes
+
+fill_data() {
+    echo "Filling test data on $zpool_name..." | tee -a "${test_log_dir}/zfs/summary.log"
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/fill_data/small_files"
+    mkdir -p "${test_data_dir}/fill_data/medium_files"
+    mkdir -p "${test_data_dir}/fill_data/large_files"
+    mkdir -p "${test_data_dir}/fill_data/very_large_files"
+   
+    sudo -s << EOF
+    fio \
+        --name=small_files \
+        --nrfiles=10000 \
+        --size=100M \
+        --rw=randwrite \
+        --bs=64k \
+        --direct=1 \
+        --directory="${test_data_dir}/fill_data/small_files" \
+        --output="${_test_log_dir}/small_files.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/small_files_bw"
+
+    fio \
+        --name=medium_files \
+        --nrfiles=1000 \
+        --size=100G \
+        --rw=randwrite \
+        --bs=128k \
+        --direct=1 \
+        --directory="${test_data_dir}/fill_data/medium_files" \
+        --output="${_test_log_dir}/medium_files.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/medium_files_bw"
+
+    fio \
+        --name=large_files \
+        --nrfiles=100 \
+        --size=750G \
+        --rw=randwrite \
+        --bs=1M \
+        --direct=1 \
+        --fallocate=posix \
+        --directory="${test_data_dir}/fill_data/large_files" \
+        --output="${_test_log_dir}/large_files.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/large_files_bw"
+
+    fio \
+        --name=very_large \
+        --nrfiles=10 \
+        --size=1500G \
+        --rw=write \
+        --bs=4M \
+        --direct=1 \
+        --fallocate=posix \
+        --directory="${test_data_dir}/fill_data/very_large_files" \
+        --output="${_test_log_dir}/very_large_files.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/very_large_files_bw"
+EOF
+}
+
+test_quick_validate() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/quick_validate"
+
+    sudo fio \
+        --name=quick_validate \
+        --ioengine=libaio \
+        --iodepth=1 \
+        --rw=randwrite \
+        --bs=4k \
+        --direct=1 \
+        --size=10M \
+        --numjobs=1 \
+        --runtime=5 \
+        --time_based \
+        --end_fsync=1 \
+        --group_reporting \
+        --directory="${test_data_dir}/quick_validate" \
+        --output="${_test_log_dir}/quick_validate.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/quick_validate_bw" \
+        --write_lat_log="${_test_log_dir}/quick_validate_lat" \
+        --write_iops_log="${_test_log_dir}/quick_validate_iops"
+}
+
+# simulates large file transfer
+test_async_seq_write() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/async_seq_write"
+
+    sudo fio \
+        --name=async_seq_write \
+        --ioengine=libaio \
+        --iodepth=4 \
+        --rw=write \
+        --bs=1M \
+        --direct=1 \
+        --size=10G \
+        --numjobs=4 \
+        --end_fsync=1 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/async_seq_write" \
+        --output="${_test_log_dir}/async_seq_write.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/async_seq_write_bw" \
+        --write_lat_log="${_test_log_dir}/async_seq_write_lat" \
+        --write_iops_log="${_test_log_dir}/async_seq_write_iops"
+}
+
+# simulates sync=always
+test_sync_seq_write() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/sync_seq_write"
+
+    sudo fio \
+        --name=sync_seq_write \
+        --ioengine=sync \
+        --rw=write \
+        --bs=128k \
+        --refill_buffers \
+        --direct=1 \
+        --size=10G \
+        --numjobs=4 \
+        --end_fsync=1 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/sync_seq_write" \
+        --output="${_test_log_dir}/sync_seq_write.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_hist_log="${_test_log_dir}/sync_seq_write_hist" \
+        --write_bw_log="${_test_log_dir}/sync_seq_write_bw" \
+        --write_lat_log="${_test_log_dir}/sync_seq_write_lat" \
+        --write_iops_log="${_test_log_dir}/sync_seq_write_iops"
+}
+
+# simulates db/cache stress
+test_async_rand_write() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/async_rand_write"
+
+    sudo fio \
+        --name=async_rand_write \
+        --ioengine=libaio \
+        --iodepth=32 \
+        --rw=randwrite \
+        --bs=4k \
+        --direct=1 \
+        --size=2G \
+        --numjobs=4 \
+        --end_fsync=1 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/async_rand_write" \
+        --output="${_test_log_dir}/async_rand_write.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/async_rand_write_bw" \
+        --write_lat_log="${_test_log_dir}/async_rand_write_lat" \
+        --write_iops_log="${_test_log_dir}/async_rand_write_iops"
+}
+
+# worst-case durability
+test_sync_rand_write() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/sync_rand_write"
+
+    sudo fio \
+        --name=sync_rand_write \
+        --ioengine=sync \
+        --rw=randwrite \
+        --bs=4k \
+        --refill_buffers \
+        --direct=1 \
+        --size=2G \
+        --numjobs=4 \
+        --end_fsync=1 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/sync_rand_write" \
+        --output="${_test_log_dir}/sync_rand_write.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_hist_log="${_test_log_dir}/sync_rand_write_hist" \
+        --write_bw_log="${_test_log_dir}/sync_rand_write_bw" \
+        --write_lat_log="${_test_log_dir}/sync_rand_write_lat" \
+        --write_iops_log="${_test_log_dir}/sync_rand_write_iops"
+}
+
+# metadata ops, tiny file writes
+test_metadata_stress() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/metadata_stress"
+
+    sudo fio \
+        --name=metadata_stress \
+        --ioengine=sync \
+        --rw=randwrite \
+        --bs=512 \
+        --size=512M \
+        --numjobs=8 \
+        --direct=1 \
+        --filesize=4k-16k \
+        --nrfiles=2000 \
+        --file_service_type=random \
+        --fallocate=none \
+        --refill_buffers \
+        --end_fsync=1 \
+        --stonewall \
+        --time_based \
+        --runtime=60 \
+        --create_serialize=0 \
+        --create_on_open=1 \
+        --unlink=1 \
+        --unlink_each_loop=1 \
+        --percentile_list=1,5,10,25,50,75,90,95,99,99.5,99.9,99.99 \
+        --group_reporting \
+        --directory="${test_data_dir}/metadata_stress" \
+        --output="${_test_log_dir}/metadata_stress.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_hist_log="${_test_log_dir}/metadata_stress_hist" \
+        --write_bw_log="${_test_log_dir}/metadata_stress_bw" \
+        --write_lat_log="${_test_log_dir}/metadata_stress_lat" \
+        --write_iops_log="${_test_log_dir}/metadata_stress_iops"
+}
+
+# general purpose i/o
+test_mixed_rw() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/mixed_rw"
+
+    sudo fio \
+        --name=mixed_rw \
+        --rw=randrw \
+        --rwmixread=70 \
+        --bs=64k \
+        --ioengine=libaio \
+        --iodepth=16 \
+        --direct=1 \
+        --size=4G \
+        --numjobs=4 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/mixed_rw" \
+        --output="${_test_log_dir}/mixed_rw.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/mixed_rw_bw" \
+        --write_lat_log="${_test_log_dir}/mixed_rw_lat" \
+        --write_iops_log="${_test_log_dir}/mixed_rw_iops"
+}
+
+# ML loading/staging of large datasets
+test_large_read() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/large_read"
+
+    sudo fio \
+        --name=large_read \
+        --rw=read \
+        --bs=1M \
+        --ioengine=libaio \
+        --iodepth=4 \
+        --direct=1 \
+        --size=20G \
+        --numjobs=2 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/large_read" \
+        --output="${_test_log_dir}/large_read.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_bw_log="${_test_log_dir}/large_read_bw" \
+        --write_lat_log="${_test_log_dir}/large_read_lat" \
+        --write_iops_log="${_test_log_dir}/large_read_iops"
+}
+
+# ZIL/SLOG saturation test
+# NFS shares with sync=always or Postgres under load
+test_slog_punisher() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/slog_punisher"
+
+    sudo fio \
+        --name=slog_punisher \
+        --rw=write \
+        --bs=8k \
+        --sync=1 \
+        --size=4G \
+        --direct=1 \
+        --ioengine=sync \
+        --numjobs=8 \
+        --end_fsync=1 \
+        --time_based \
+        --runtime=60 \
+        --group_reporting \
+        --directory="${test_data_dir}/slog_punisher" \
+        --output="${_test_log_dir}/slog_punisher.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_hist_log="${_test_log_dir}/slog_punisher_hist" \
+        --write_bw_log="${_test_log_dir}/slog_punisher_bw" \
+        --write_lat_log="${_test_log_dir}/slog_punisher_lat" \
+        --write_iops_log="${_test_log_dir}/slog_punisher_iops"
+}
+
+# much larger sustained test on the best setups to test it's limits
+fio_long_haul() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "${test_data_dir}/long_haul"
+
+    sudo fio \
+        --name=long_haul \
+        --ioengine=libaio \
+        --iodepth=16 \
+        --rw=randrw \
+        --rwmixread=70 \
+        --bs=128k \
+        --direct=1 \
+        --refill_buffers \
+        --size=100G \
+        --numjobs=4 \
+        --time_based \
+        --runtime=1800 \
+        --group_reporting \
+        --directory="${test_data_dir}/longhaul" \
+        --output="${_test_log_dir}/longhaul.log" \
+        --output-format=json,normal \
+        --log_avg_msec=1000 \
+        --write_hist_log="${_test_log_dir}/longhaul_hist" \
+        --write_bw_log="${_test_log_dir}/longhaul_bw" \
+        --write_lat_log="${_test_log_dir}/longhaul_lat" \
+        --write_iops_log="${_test_log_dir}/longhaul_iops"
+}
+
+# ----------- Pool Management -----------
+setup_dirs() {
+    test_log_dir="$log_dir/$zpool_name"
+    mkdir -p "$test_log_dir"
+    sudo mkdir -p "$zpool_mountpoint"
+}
+
+setup_pool() {
+    sudo zpool create "$zpool_name" \
+        -o "$zpool_options" \
+        -m "$zpool_mountpoint/$zpool_name" \
+        "$pool_test_layout" "${hd_pool_devs[@]}"
+    zfs list
+}
+
+configure_pool() {
+    sudo zfs set compression=lz4 \
+                 recordsize=1M \
+                 atime=off \
+                 xattr=sa \
+                 dnodesize=auto "$zpool_name"
+    echo "[+] Verifying dataset properties for $zpool_name..."
+    zfs get -s local all $zpool_name | tee -a "${test_log_dir}/pool-props.log"
+}
+
+add_special_vdev() {
+    echo "Adding special metadata vdev..." | tee -a "${test_log_dir}/zfs/summary.log"
+    sudo zpool add -f "$zpool_name" special mirror "${sd_special_devs[@]}"
+    sudo zfs set special_small_blocks=64k "$zpool_name"
+    echo "[+] special_small_blocks changed to 64k"
+    zfs get special_small_blocks $zpool_name | tee -a "${test_log_dir}/pool-props.log"
+    zpool status
+}
+
+add_log_vdev() {
+    echo "Adding SLOG vdev..." | tee -a "${test_log_dir}/zfs/summary.log"
+    sudo zpool add "$zpool_name" log "$sd_log_dev"
+    zpool status
+}
+
+add_cache_vdev() {
+    echo "Adding L2Arc vdev..." | tee -a "${test_log_dir}/zfs/summary.log"
+    sudo zpool add "$zpool_name" cache "$sd_cache_dev"
+    zpool status
+}
+
+destroy_pool() {
+    sudo zpool destroy "$zpool_name" &&\
+    sudo rmdir "$zpool_mountpoint/$zpool_name" &&\
+    echo "Pool $zpool_name sucessfully destroyed"
+    zfs list
+}
+
+trigger_resilver() {
+    local _failed_dev="/dev/${1}"
+    local _replace_dev="/dev/${1}1"
+    echo "Simulating disk failure on $zpool_name..." | tee -a "${test_log_dir}/zfs/summary.log"
+    sudo zpool offline "$zpool_name" "$_failed_dev"
+    sudo zpool labelclear -f "$_replace_dev"
+
+    sudo wipefs -a "$_failed_dev"
+    sudo parted -s "$_failed_dev" mklabel gpt
+    sudo parted -s "$_failed_dev" mkpart primary 0% 100%
+    sudo partprobe "$_failed_dev"
+
+    sleep 2
+    sudo zpool replace -f "$zpool_name" "$_failed_dev" "$_replace_dev"
+}
+
+# ----------- Monitoring Functions -----------
+system_snapshot() {
+    local _stage=$1
+    zfs list -o name,used,available,referenced,compressratio -r "$zpool_name" >> "$_test_log_dir/zfs/zfs_list.log"
+    free -h >> "$_test_log_dir/system/memory.log"
+    if [[ $_stage == 'pre' ]]; then
+        df -h | head -1 > "$_test_log_dir/system/df.log"
+    fi
+    df -h | grep "$zpool_name" >> "$_test_log_dir/system/df.log"
+
+    # SMART logs
+    for dev in $(lsblk -ndo NAME | grep -v nvme); do
+        sudo smartctl -A /dev/$dev >> "$_test_log_dir/hdds/smart_${dev}.log"
+    done
+
+    for nvme in $(ls /dev/nvme*n1); do
+        sudo nvme smart-log $nvme >> "$_test_log_dir/nvme/nvme_$(basename $nvme).log"
+    done
+}
+
+run_monitoring() {
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    mkdir -p "$_test_log_dir/zfs"
+    mkdir -p "$_test_log_dir/hdds"
+    mkdir -p "$_test_log_dir/nvme"
+    mkdir -p "$_test_log_dir/system"
+
+    echo "Starting monitoring for $test_name..."
+
+    # Start continuous monitors and capture PIDs
+    arcstat -f time,hits,miss,hit%,c,mh%,dh%,ph%,size,c,avail 1 > "$_test_log_dir/zfs/arcstat.log" &
+    local _arcstat_pid=$!
+
+    zpool iostat -v "$zpool_name" 1 > "$_test_log_dir/zfs/zpool_iostat.log" &
+    local _zpool_iostat_pid=$!
+
+    # Snapshot logs before test
+    system_snapshot 'pre'
+
+    # Store background monitor PIDs
+    echo "$_arcstat_pid $_zpool_iostat_pid" > "$_test_log_dir/monitor_pids"
+}
+
+stop_monitoring() {
+    echo "Stopping monitoring for $test_name..."
+    local test_name="$1"
+    local _test_log_dir="$test_log_dir/$test_name"
+    local _arcstat_pid _zpool_iostat_pid
+
+    if [ -f "$_test_log_dir/monitor_pids" ]; then
+        read _arcstat_pid _zpool_iostat_pid < "$_test_log_dir/monitor_pids"
+        kill $_arcstat_pid $_zpool_iostat_pid 2>/dev/null
+        rm -f "$_test_log_dir/monitor_pids"
+    fi
+    echo ""
+
+    # Snapshot logs after test
+    system_snapshot 'post'
+}
+
+run_test_with_monitoring() {
+    local test_name="$1"
+    run_monitoring "$test_name"
+    "test_$test_name" "$test_name"
+    # for testing script and logging etc.
+    # test_quick_validate "$test_name"
+    stop_monitoring "$test_name"
+}
+
+iostat() {
+    watch -n 1 zpool iostat -vlyq 1 1
+}
+
+# ----------- Misc Tools -----------
+filesize_histogram() {
+    # find . -type f -print0 | \
+    # xargs -0 ls -l | \
+        # awk '{ n=int(log($5)/log(2)); if (n<10) { n=10; } size[n]++ } END { for (i in size) printf("%d %d\n", 2^i, size[i]) }' | \
+        # sort -n | \
+        # awk 'function human(x) { x[1]/=1024; if (x[1]>=1024) { x[2]++; human(x) } } { a[1]=$1; a[2]=0; human(a); printf("%3d%s: %6d\n", a[1],substr("kMGTEPYZ",a[2]+1,1),$2) }'
+
+    # This version doesn't double count files that are hardlinked
+    find . -type f -print0 | \
+        xargs -0 ls -li | \
+        awk '{ if (!seen[$1]++) { n=int(log($6)/log(2)); if (n<10) { n=10; } size[n]++ } } END { for (i in size) printf("%d %d\n", 2^i, size[i]) }' | \
+        sort -n | \
+        awk 'function human(x) { x[1]/=1024; if (x[1]>=1024) { x[2]++; human(x) } } { a[1]=$1; a[2]=0; human(a); printf("%3d%s: %6d\n", a[1],substr("kMGTEPYZ",a[2]+1,1),$2) }'
+}
+
+
+## Internal Script
+## Args
+_parse_args() {
+    local _args=("$@")
+    while (( "${#_args}" )); do
+        case "$1" in
+            -@([a-z|A-Z]*))
+                # Switches
+                _parse_switches "$1"
+                ;;
+            --*)
+                # Options
+                _parse_options "$1"
+                ;;
+            *)
+                # Subcommands args stored as an array for later. For more
+                # complicated scripts, sometimes we need to act on the
+                # switches/options or source configuration first before we run
+                # the subcommands.
+                _script_subcommands_args=("$@")
+                break
+                ;;
+        esac
+        shift
+        _args=("$@")
+    done
+    shopt -u extglob
+    # Check for minimum number of arguments/subcommands beyond switches and options here.
+    if [[ ${#_script_subcommands_args[@]} < $_script_min_args ]]; then
+        echo "Syntax error: a minimum of $_script_min_args arguments required."
+        echo ""
+        _usage_short
+        exit 1
+    fi
+    if [[ ${#_script_subcommands_args[@]} > $_script_max_args ]]; then
+        echo "Syntax error: only $_script_max_args argument allowed."
+        echo ""
+        _usage_short
+        exit 1
+    fi
+}
+
+_parse_switches() {
+    local _switches="$1"
+    _switches="${_switches:1}"
+    while (( "${#_switches}" )); do
+        # Handle actions for individual switches here
+        case "${_switches:0:1}" in
+            h)
+                _usage_short
+                exit 0
+                ;;
+            v)
+                _version
+                exit 0
+                ;;
+            *)
+                echo "Error: \"${_switches:0:1}\" not a valid switch"
+                echo ""
+                _usage_short
+                exit 1
+                ;;
+        esac
+        _switches="${_switches:1}"
+    done
+}
+
+_parse_options() {
+    local _option=( $( IFS='='; echo ${1} ) )
+    local _option_keyword=${_option[0]:2}
+    # Get value of option if there is any
+    local _option_value=${_option[@]:1}
+    # Handle actions for individual options here
+    case "${_option_keyword}" in
+        bash-debug)
+            _script_bash_debug=true
+            ;;
+        help)
+            _usage
+            exit 0
+            ;;
+        name)
+            zpool_name="${_option_value}"
+            test_log_dir="$log_dir/$zpool_name"
+            ;;
+        type)
+            case "${_option_value}" in
+                raidz2)
+                    pool_type="${_option_value}"
+                    pool_test_layout=$raidz_layout
+                    ;;
+                draid2)
+                    pool_type="${_option_value}"
+                    pool_test_layout=$draid_layout
+                    ;;
+                *)
+                    echo "Bad value for \"type\" option in ${_option_value}, ignoring for now."
+                    ;;
+            esac
+            ;;
+        version)
+            _version
+            exit 0
+            ;;
+        *)
+            echo "Error: \"${_option_keyword}\" not a valid option"
+            echo ""
+            _usage_short
+            exit 1
+            ;;
+    esac
+}
+
+_parse_subcommands() {
+    local _args=("$@")
+    while (( "${#_args}" )); do
+        case "$1" in
+            add)
+                device_to_add=${_args[@]:1}
+                _script_subcommand_action="add"
+                break
+                ;;
+            destroy)
+                local _pool_name=${_args[@]:1:1}
+                zpool_name=${_pool_name:-$zpool_name}
+                _script_subcommand_action="destroy"
+                break
+                ;;
+            histogram)
+                _script_subcommand_action="histogram"
+                break
+                ;;
+            iostat)
+                _script_subcommand_action="iostat"
+                break
+                ;;
+            monitor)
+                _script_subcommand_action="monitor"
+                break
+                ;;
+            setup)
+                pool_type=${_args[@]:1:1}
+                _script_subcommand_action="setup"
+                break
+                ;;
+            test)
+                test_type=${_args[@]:1:1}
+                _script_subcommand_action="test"
+                break
+                ;;
+            *)
+                echo "Error: "$1" not a valid subcommand"
+                _usage
+                exit 1
+                ;;
+        esac
+        shift
+        _args=("$@")
+    done
+}
+
+## Dialogs
+_usage_cli=$(cat <<EOF
+Usage: ${_script_name} [<switches>...] [<option keyword>=<value>...] <subcommand> <subcommand args>
+${_script_short_desc}
+EOF
+)
+
+_usage_args=$(cat <<EOF
+Switches/Options:
+
+    --bash-debug            Show bash debug info for *most* of the non-template part 
+                            of the script. It starts after the arguments are parsed.
+
+    --name                  (Required for all commands) Sets name of pool.
+    --type                  (Required for test subcommand) Set test type (raidz2, draid2)
+                            for logging so script can keep track of topology accross multiple
+                            invocations.
+
+    -h|--help               Short|Full help
+
+    -v|--version            Version
+
+Subcommands
+
+    add <device>            Add <log|special|cache> devices to pool
+    destroy                 Destroy pool. Pool name given with --name option
+    iostat                  View detailed pool status live. Capture ARC, zpool iostat, SMART, and memory info.
+    histogram               Show histogram of file sizes for current directory
+    setup <type>            Setup pool with <subcommand arg> type
+          raidz2
+          draid2
+    test <testname>
+         resilver
+         all-fio            All fio tests
+         async_seq_write    Run async sequential write test
+         sync_seq_write     Run sync sequential write test
+         async_rand_write   Run async random write test
+         sync_rand_write    Run sync random write test
+         metadata_stress    Run metadata small-file stress test
+         mixed_rw           Run mixed read/write test
+         large_read         Run sequential read test
+         slog_punisher      Run sync-heavy SLOG punisher test"
+EOF
+)
+
+_usage_short() {
+    cat <<EOF
+${_usage_cli}
+
+${_usage_args}
+
+Run '${_script_name} --help' for the full help documentation.
+EOF
+}
+
+_usage() {
+    cat <<EOF
+${_usage_cli}
+
+${_usage_args}
+
+Requirements:
+
+${_script_requirements}
+
+Version:
+
+${_script_name} version: ${_script_version}
+Last modifed on: ${_script_mod_date}
+EOF
+}
+
+_version() {
+    echo "${_script_name} version: ${_script_version}"
+    echo "Last modifed on: ${_script_mod_date}"
+}
+
+## Sequence 
+_main() {
+    _parse_args "$@"
+    # I realize this only effects the non-template part of the script; this is usually fine.
+    # If you really want to debug the entire thing, then move `set -x` above `_parse_args "$@"`
+    if $_script_bash_debug; then
+        set -xeo pipefail
+    else
+        set -eo pipefail
+    fi
+    _parse_subcommands "${_script_subcommands_args[@]}"
+
+    # Default behavior
+    case "$_script_subcommand_action" in
+        add)
+            case "$device_to_add" in
+                log) 
+                    add_log_vdev
+                ;;
+                special) 
+                    add_special_vdev
+                ;;
+                cache) 
+                    add_cache_vdev
+                ;;
+                *)
+                    echo "Bad or empty option for \"Add\" subcommand"
+                ;;
+            esac
+            ;;
+        destroy)
+            destroy_pool
+            ;;
+        histogram)
+            filesize_histogram
+            ;;
+        iostat)
+            iostat
+            ;;
+        monitor)
+            run_monitoring
+            ;;
+        setup)
+            case "$pool_type" in
+                raidz2) 
+                    pool_test_layout=$raidz_layout
+                    echo "Creating RAIDZ2 pool..."
+                ;;
+                draid2) 
+                    pool_test_layout=$draid_layout
+                    echo "Creating dRAID2 pool..."
+                ;;
+                *)
+                    echo "Bad option for \"Add\" subcommand"
+                ;;
+            esac
+            setup_dirs
+            setup_pool && configure_pool
+            ;;
+        test)
+            # always clear ARC cache before every test
+            sudo -s << EOF
+            echo 3 > /proc/sys/vm/drop_caches
+EOF
+            test_data_dir="$zpool_mountpoint/$zpool_name"
+            sudo mkdir -p "$test_data_dir/$test_type"
+            sudo chown -R 1000:1000 "$test_data_dir"
+            case "$test_type" in
+                async_seq_write|sync_seq_write|async_rand_write|sync_rand_write|metadata_stress|mixed_rw|large_read|slog_punisher)
+                    run_test_with_monitoring "$test_type"
+                ;;
+                all-fio)
+                    echo "Running all 8 fio tests..."
+                    run_test_with_monitoring 'async_seq_write'
+                    run_test_with_monitoring 'sync_seq_write'
+                    run_test_with_monitoring 'async_rand_write'
+                    run_test_with_monitoring 'sync_rand_write'
+                    run_test_with_monitoring 'metadata_stress'
+                    run_test_with_monitoring 'mixed_rw'
+                    run_test_with_monitoring 'large_read'
+                    run_test_with_monitoring 'slog_punisher'
+                ;;
+                resilver)
+                    local test_name="$1"
+                    local _test_log_dir="$test_log_dir/$test_type"
+                    mkdir -p "$_test_log_dir/system"
+                    mkdir -p "$_test_log_dir/zfs"
+                    mkdir -p "$_test_log_dir/hdds"
+                    mkdir -p "$_test_log_dir/nvme"
+                    echo "Resilver started at $(date)" | tee -a "${test_log_dir}/zfs/summary.log"
+
+                    # system logs 
+                    system_snapshot 'pre'
+
+                    fill_data 'resilver'
+                    trigger_resilver ${hd_pool_devs[0]}
+                    zpool iostat -v 1 > "$_test_log_dir/zfs/zpool_iostat.log" &
+                    local _zpool_iostat_pid=$!
+                    sar -u 1 > "$_test_log_dir/system/sar_cpu.log" &
+                    local _sar_cpu_pid=$!
+                    sar -r 1 > "$_test_log_dir/system/sar_mem.log" &
+                    local _sar_mem_pid=$!
+                    while zpool status "$zpool_name" | grep -q "resilver in progress"; do
+                        zpool status | grep -i resilver | tr -d '\n' && echo -ne '\r'
+                        sleep 60
+                    done
+
+                    kill $_zpool_iostat_pid $_sar_cpu_pid $_sar_mem_pid 2>/dev/null
+
+                    zpool status -v | grep -i resilver >> "$_test_log_dir/zfs/summary.log"
+
+                    # system logs 
+                    system_snapshot 'post'
+                    echo "Resilver ended at $(date)" | tee -a "${test_log_dir}/zfs/summary.log"
+                ;;
+                *)
+                    echo "Bad or empty option for test type"
+                ;;
+            esac
+            ;;
+            *)
+                echo "Bad or empty option for subcommand"
+            ;;
+        *)
+            echo "Bad or empty option for subcommand"
+        ;;
+    esac
+}
+
+## Runtime
+_main "$@"
